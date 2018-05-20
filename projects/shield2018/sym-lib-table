@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name shield2018-rescue)(type Legacy)(uri ${KIPRJMOD}/shield2018-rescue.lib)(options "")(descr ""))
+  (lib (name power1)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/power.lib)(options "")(descr ""))
+)

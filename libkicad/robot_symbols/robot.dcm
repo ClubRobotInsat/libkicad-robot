@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP micromatch_4
+D Connecteur micromatch 4 broches
+K micromatch micro match 4 broches pin robot
+$ENDCMP
+#
+$CMP micromatch_6
+D Connecteur micromatch avec 6 broches
+K Micromatch female 6 robot
+$ENDCMP
+#
+#End Doc Library

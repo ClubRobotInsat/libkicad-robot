@@ -1,3 +1,6 @@
 *.sch binary
 *.kicad_pcb binary
 *.svg binary
+*.lib binary
+*.kicad_mod binary
+*.dcm binary

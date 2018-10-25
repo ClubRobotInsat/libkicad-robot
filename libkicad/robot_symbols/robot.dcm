@@ -1,5 +1,10 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP black_pill
+D [WIP] Carte 'Black Pill' de Robodyn, à ficher ou souder sur un pcb
+K Black Pill STM32
+$ENDCMP
+#
 $CMP micromatch_4
 D Connecteur micromatch 4 broches
 K micromatch micro match 4 broches pin robot

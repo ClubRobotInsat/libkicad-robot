@@ -1,5 +1,15 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP HE14_3
+D Connecteur standard, 3 pins
+K connecteur 3
+$ENDCMP
+#
+$CMP alim_logique_5V
+D Alimentation logique (5v)
+K alim logique 5
+$ENDCMP
+#
 $CMP black_pill
 D [WIP] Carte 'Black Pill' de Robodyn, à ficher ou souder sur un pcb
 K Black Pill STM32

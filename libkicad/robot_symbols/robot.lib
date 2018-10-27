@@ -42,6 +42,7 @@ F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  Connector*:*_1x??_*
+ HE14*
 $ENDFPLIST
 DRAW
 S -50 -95 0 -105 1 1 6 N
@@ -63,6 +64,7 @@ F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  Connector*:*_1x??_*
+ HE14*
 $ENDFPLIST
 DRAW
 S -50 -95 0 -105 1 1 6 N

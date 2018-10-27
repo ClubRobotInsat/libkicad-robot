@@ -35,29 +35,41 @@ ENDDEF
 #
 # alim_logique_5V
 #
-DEF alim_logique_5V U 0 40 Y Y 1 F N
-F0 "U" 0 150 50 H V C CNN
-F1 "alim_logique_5V" 0 250 50 H V C CNN
+DEF alim_logique_5V J 0 40 Y Y 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "alim_logique_5V" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
 DRAW
-S 50 100 -50 -100 0 1 0 N
-X 5V ~ 100 50 100 L 50 50 1 1 w
-X GND ~ 100 -50 100 L 50 50 1 1 w
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -150 1 1 10 f
+X 5v 1 -200 100 150 R 50 50 1 1 w
+X GND 2 -200 0 150 R 50 50 1 1 P
+X NCN 3 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
 # alim_puissance_12V
 #
-DEF alim_puissance_12V U 0 40 Y Y 1 F N
-F0 "U" 0 200 50 H V C CNN
-F1 "alim_puissance_12V" 0 300 50 H V C CNN
+DEF alim_puissance_12V J 0 1 Y Y 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "alim_puissance_12V" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
 DRAW
-S 50 100 -50 -100 0 1 0 N
-X 12V ~ 100 50 100 L 50 50 1 1 w
-X GND ~ 100 -50 100 L 50 50 1 1 w
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X 12V 1 -200 0 150 R 50 50 1 1 w
+X GND 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

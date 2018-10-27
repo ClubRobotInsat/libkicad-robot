@@ -6,8 +6,15 @@ K connecteur 3
 $ENDCMP
 #
 $CMP alim_logique_5V
-D Alimentation logique (5v)
-K alim logique 5
+D Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP alim_puissance_12V
+D Alimentation pour le bus puissance du robot (12v à 16v)
+K connector connecteur alimentation puissance 12 12V
+F ~
 $ENDCMP
 #
 $CMP black_pill

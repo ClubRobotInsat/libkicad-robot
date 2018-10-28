@@ -1,4 +1,4 @@
-(module HE13-3 (layer F.Cu) (tedit 5BD5E948)
+(module HE13-3 (layer F.Cu) (tedit 5BD5F310)
   (tags "HE13 3 logique")
   (fp_text reference HE13-3 (at 0 -2.54) (layer F.SilkS) hide
     (effects (font (size 1 1) (thickness 0.15)))
@@ -27,7 +27,7 @@
   (pad 3 thru_hole oval (at 2.54 3.81) (size 1.524 2.54) (drill 0.762) (layers *.Cu *.Mask))
   (pad 1 thru_hole oval (at -2.54 3.81) (size 1.524 2.54) (drill 1) (layers *.Cu *.Mask))
   (pad 2 thru_hole oval (at 0 3.81) (size 1.524 2.54) (drill 0.762) (layers *.Cu *.Mask))
-  (model "/Users/alex/Club Robot/kicad/libkicad/robot.pretty/3d/c-281698-3-g-3d.stp"
+  (model ${KICAD_LIBRAIRIES_CLUB_DIR}/robot.pretty/3d/c-281698-3-g-3d.stp
     (offset (xyz 0 9 3))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 180))

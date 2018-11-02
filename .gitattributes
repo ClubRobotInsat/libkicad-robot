@@ -4,3 +4,5 @@
 *.lib binary
 *.kicad_mod binary
 *.dcm binary
+*.pro filter=kicad_project
+*.sch filter=kicad_sch

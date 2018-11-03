@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Deplacement-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -162,10 +161,10 @@ F 3 "~" H 4250 2000 50  0001 C CNN
 	1    4250 2000
 	-1   0    0    1   
 $EndComp
-NoConn ~ 4450 1800
-Text GLabel 4450 2000 2    50   Input ~ 0
-QEI_gauche_1
+NoConn ~ 4450 2000
 Text GLabel 4450 1900 2    50   Input ~ 0
+QEI_gauche_1
+Text GLabel 4450 1800 2    50   Input ~ 0
 QEI_gauche_2
 $Comp
 L Connector_Generic:Conn_01x05 J5
@@ -178,10 +177,10 @@ F 3 "~" H 4250 1250 50  0001 C CNN
 	1    4250 1250
 	-1   0    0    1   
 $EndComp
-NoConn ~ 4450 1050
-Text GLabel 4450 1250 2    50   Input ~ 0
-QEI_droite_1
+NoConn ~ 4450 1250
 Text GLabel 4450 1150 2    50   Input ~ 0
+QEI_droite_1
+Text GLabel 4450 1050 2    50   Input ~ 0
 QEI_droite_2
 $Comp
 L Connector:TestPoint TP1
@@ -438,7 +437,6 @@ F 3 "~" H 1350 1450 50  0001 C CNN
 	1    1350 1450
 	1    0    0    -1  
 $EndComp
-Connection ~ 1350 1300
 $Comp
 L power:GND #PWR03
 U 1 1 5BDCB128

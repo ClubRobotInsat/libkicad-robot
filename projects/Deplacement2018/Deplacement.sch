@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Deplacement-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -117,7 +118,7 @@ $EndComp
 NoConn ~ 2950 3500
 NoConn ~ 2950 3600
 $Comp
-L Deplacement-rescue:alim_logique_5V-robot J1
+L robot:alim_logique_5V J1
 U 1 1 5BDB21CE
 P 1150 1200
 F 0 "J1" H 1114 883 50  0000 C CNN

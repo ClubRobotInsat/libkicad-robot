@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L robot:black_pill U1
+L @Robot:black_pill U1
 U 1 1 5BDB17AF
 P 2400 4250
 F 0 "U1" H 2375 5465 50  0000 C CNN
@@ -118,7 +118,7 @@ $EndComp
 NoConn ~ 2950 3500
 NoConn ~ 2950 3600
 $Comp
-L robot:alim_logique_5V J1
+L @Robot:alim_logique_5V J1
 U 1 1 5BDB21CE
 P 1150 1200
 F 0 "J1" H 1114 883 50  0000 C CNN

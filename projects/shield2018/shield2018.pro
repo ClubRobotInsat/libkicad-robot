@@ -1,4 +1,4 @@
-update=jeu. 07 juin 2018 16:48:17 CEST
+update=Date
 version=1
 last_client=kicad
 [general]

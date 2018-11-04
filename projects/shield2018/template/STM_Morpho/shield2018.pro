@@ -1,4 +1,4 @@
-update=jeu. 17 mai 2018 15:59:03 CEST
+update=Date
 version=1
 last_client=eeschema
 [pcbnew]

@@ -33,4 +33,10 @@ D Connecteur micromatch avec 6 broches
 K Micromatch female 6 robot
 $ENDCMP
 #
+$CMP w5500
+D Ethernet Connector W5500
+K w5500 robot ethernet mac IP
+F /home/paul/nextcloud/Documents/INSA/Club Robot/DOC/w5500/W5500.pdf
+$ENDCMP
+#
 #End Doc Library

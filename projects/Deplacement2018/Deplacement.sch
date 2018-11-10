@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Deplacement-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -20,7 +19,7 @@ U 1 1 5BDB17AF
 P 2400 4250
 F 0 "U1" H 2375 5465 50  0000 C CNN
 F 1 "black_pill" H 2375 5374 50  0000 C CNN
-F 2 "robot:blackpill" H 2400 4250 50  0001 C CNN
+F 2 "@Robot:black_pill" H 2400 4250 50  0001 C CNN
 F 3 "" H 2400 4250 50  0001 C CNN
 	1    2400 4250
 	1    0    0    -1  
@@ -123,7 +122,7 @@ U 1 1 5BDB21CE
 P 1150 1200
 F 0 "J1" H 1114 883 50  0000 C CNN
 F 1 "alim_logique_5V" H 1114 974 50  0000 C CNN
-F 2 "robot:HE14-3_horizontal" H 1150 1200 50  0001 C CNN
+F 2 "@Robot:HE14-3_horizontal" H 1150 1200 50  0001 C CNN
 F 3 "~" H 1150 1200 50  0001 C CNN
 	1    1150 1200
 	-1   0    0    1   
@@ -157,7 +156,7 @@ U 1 1 5BDB27DA
 P 4250 2000
 F 0 "J6" H 4170 1575 50  0000 C CNN
 F 1 "QEI_gauche" H 4170 1666 50  0000 C CNN
-F 2 "robot:HE14-5_horizontal" H 4250 2000 50  0001 C CNN
+F 2 "@Robot:HE14-5_horizontal" H 4250 2000 50  0001 C CNN
 F 3 "~" H 4250 2000 50  0001 C CNN
 	1    4250 2000
 	-1   0    0    1   
@@ -173,7 +172,7 @@ U 1 1 5BDB4109
 P 4250 1250
 F 0 "J5" H 4170 825 50  0000 C CNN
 F 1 "QEI_droite" H 4170 916 50  0000 C CNN
-F 2 "robot:HE14-5_horizontal" H 4250 1250 50  0001 C CNN
+F 2 "@Robot:HE14-5_horizontal" H 4250 1250 50  0001 C CNN
 F 3 "~" H 4250 1250 50  0001 C CNN
 	1    4250 1250
 	-1   0    0    1   
@@ -260,7 +259,7 @@ U 1 1 5BDB84F6
 P 3500 2750
 F 0 "J4" H 3420 2425 50  0000 C CNN
 F 1 "Conn_01x03" H 3420 2516 50  0000 C CNN
-F 2 "robot:HE14-3_horizontal" H 3500 2750 50  0001 C CNN
+F 2 "@Robot:HE14-3_horizontal" H 3500 2750 50  0001 C CNN
 F 3 "~" H 3500 2750 50  0001 C CNN
 	1    3500 2750
 	-1   0    0    1   
@@ -286,7 +285,7 @@ U 1 1 5BDB95E5
 P 2850 1250
 F 0 "J2" H 2770 825 50  0000 C CNN
 F 1 "moteur_droit" H 2770 916 50  0000 C CNN
-F 2 "robot:micromatch-4-pin-male" H 2850 1250 50  0001 C CNN
+F 2 "@Robot:ConnectorMicromatch-4" H 2850 1250 50  0001 C CNN
 F 3 "~" H 2850 1250 50  0001 C CNN
 	1    2850 1250
 	-1   0    0    1   
@@ -297,7 +296,7 @@ U 1 1 5BDB9851
 P 2850 2000
 F 0 "J3" H 2770 1575 50  0000 C CNN
 F 1 "moteur_gauche" H 2770 1666 50  0000 C CNN
-F 2 "robot:micromatch-4-pin-male" H 2850 2000 50  0001 C CNN
+F 2 "@Robot:ConnectorMicromatch-4" H 2850 2000 50  0001 C CNN
 F 3 "~" H 2850 2000 50  0001 C CNN
 	1    2850 2000
 	-1   0    0    1   

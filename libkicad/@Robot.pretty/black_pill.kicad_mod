@@ -1,4 +1,4 @@
-(module black_pill (layer F.Cu) (tedit 5BD9CA6A)
+(module black_pill (layer F.Cu) (tedit 5BE6B732)
   (descr "Through hole straight socket strip, 1x20, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
   (tags "Through hole socket strip THT 1x20 2.54mm single row")
   (fp_text reference REF** (at 7.62 0) (layer F.SilkS)
@@ -85,6 +85,11 @@
   (pad 21 thru_hole rect (at 15.24 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
   (model ${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x20_P2.54mm_Vertical.wrl
     (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+  (model ${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x20_P2.54mm_Vertical.wrl
+    (offset (xyz 15 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )

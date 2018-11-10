@@ -6,3 +6,6 @@
 *.dcm binary
 *.pro filter=kicad_project
 *.sch filter=kicad_sch
+*.swrl binary
+*.igs binary
+*.cd

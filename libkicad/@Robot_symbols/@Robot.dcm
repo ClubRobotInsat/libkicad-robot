@@ -33,6 +33,11 @@ D Connecteur micromatch avec 6 broches
 K Micromatch female 6 robot
 $ENDCMP
 #
+$CMP servo_connector
+D Connector for herkulex servomotor
+K herkulex connector drs0x01 drs0x02 drs robort
+$ENDCMP
+#
 $CMP w5500
 D Ethernet Connector W5500
 K w5500 robot ethernet mac IP

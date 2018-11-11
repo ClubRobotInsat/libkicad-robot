@@ -1,0 +1,224 @@
+EESchema Schematic File Version 4
+LIBS:black_pill_servo-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Black Pill Servo PCB"
+Date "2018-11-10"
+Rev "1"
+Comp "Club Robot"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L @Robot:black_pill U1
+U 1 1 5BE6AD49
+P 4200 3250
+F 0 "U1" H 4175 4465 50  0000 C CNN
+F 1 "black_pill" H 4175 4374 50  0000 C CNN
+F 2 "@Robot:black_pill" H 4200 3250 50  0001 C CNN
+F 3 "" H 4200 3250 50  0001 C CNN
+	1    4200 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L @Robot:alim_logique_5V J1
+U 1 1 5BE72827
+P 6750 3700
+F 0 "J1" H 6919 3750 50  0000 L CNN
+F 1 "alim_logique_5V" H 6919 3659 50  0000 L CNN
+F 2 "@Robot:HE14-3_horizontal" H 6750 3700 50  0001 C CNN
+F 3 "~" H 6750 3700 50  0001 C CNN
+	1    6750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5BE72A03
+P 6550 3600
+F 0 "#PWR?" H 6550 3450 50  0001 C CNN
+F 1 "+5V" V 6565 3728 50  0000 L CNN
+F 2 "" H 6550 3600 50  0001 C CNN
+F 3 "" H 6550 3600 50  0001 C CNN
+	1    6550 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5BE72A39
+P 3600 4000
+F 0 "#PWR?" H 3600 3850 50  0001 C CNN
+F 1 "+5V" V 3615 4128 50  0000 L CNN
+F 2 "" H 3600 4000 50  0001 C CNN
+F 3 "" H 3600 4000 50  0001 C CNN
+	1    3600 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BE72AA6
+P 6550 3700
+F 0 "#PWR?" H 6550 3450 50  0001 C CNN
+F 1 "GND" V 6555 3572 50  0000 R CNN
+F 2 "" H 6550 3700 50  0001 C CNN
+F 3 "" H 6550 3700 50  0001 C CNN
+	1    6550 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BE72B0F
+P 4750 2300
+F 0 "#PWR?" H 4750 2050 50  0001 C CNN
+F 1 "GND" V 4755 2172 50  0000 R CNN
+F 2 "" H 4750 2300 50  0001 C CNN
+F 3 "" H 4750 2300 50  0001 C CNN
+	1    4750 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BE72B3D
+P 4750 2400
+F 0 "#PWR?" H 4750 2150 50  0001 C CNN
+F 1 "GND" V 4755 2272 50  0000 R CNN
+F 2 "" H 4750 2400 50  0001 C CNN
+F 3 "" H 4750 2400 50  0001 C CNN
+	1    4750 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BE72B6B
+P 3600 4100
+F 0 "#PWR?" H 3600 3850 50  0001 C CNN
+F 1 "GND" V 3605 3972 50  0000 R CNN
+F 2 "" H 3600 4100 50  0001 C CNN
+F 3 "" H 3600 4100 50  0001 C CNN
+	1    3600 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L @Robot:servo_connector U2
+U 1 1 5BE72FA1
+P 6650 2850
+F 0 "U2" H 6878 2901 50  0000 L CNN
+F 1 "servo_connector" H 6878 2810 50  0000 L CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 6650 3100 50  0001 C CNN
+F 3 "" H 6650 3100 50  0001 C CNN
+	1    6650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BE73039
+P 6400 2700
+F 0 "#PWR?" H 6400 2450 50  0001 C CNN
+F 1 "GND" V 6405 2572 50  0000 R CNN
+F 2 "" H 6400 2700 50  0001 C CNN
+F 3 "" H 6400 2700 50  0001 C CNN
+	1    6400 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L @Robot:w5500 U3
+U 1 1 5BE73094
+P 6700 1650
+F 0 "U3" H 6700 2125 50  0000 C CNN
+F 1 "w5500" H 6700 2034 50  0000 C CNN
+F 2 "@Robot:w5500" H 6700 1300 50  0001 C CNN
+F 3 "/home/paul/nextcloud/Documents/INSA/Club Robot/DOC/w5500/W5500.pdf" H 6700 1300 50  0001 C CNN
+	1    6700 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5BE73162
+P 7150 1600
+F 0 "#PWR?" H 7150 1450 50  0001 C CNN
+F 1 "+3V3" V 7165 1728 50  0000 L CNN
+F 2 "" H 7150 1600 50  0001 C CNN
+F 3 "" H 7150 1600 50  0001 C CNN
+	1    7150 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5BE73194
+P 7150 1500
+F 0 "#PWR?" H 7150 1350 50  0001 C CNN
+F 1 "+3V3" V 7165 1628 50  0000 L CNN
+F 2 "" H 7150 1500 50  0001 C CNN
+F 3 "" H 7150 1500 50  0001 C CNN
+	1    7150 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5BE731C6
+P 3600 4200
+F 0 "#PWR?" H 3600 4050 50  0001 C CNN
+F 1 "+3V3" V 3615 4328 50  0000 L CNN
+F 2 "" H 3600 4200 50  0001 C CNN
+F 3 "" H 3600 4200 50  0001 C CNN
+	1    3600 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BE73207
+P 7150 1400
+F 0 "#PWR?" H 7150 1150 50  0001 C CNN
+F 1 "GND" V 7155 1272 50  0000 R CNN
+F 2 "" H 7150 1400 50  0001 C CNN
+F 3 "" H 7150 1400 50  0001 C CNN
+	1    7150 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BE73241
+P 6250 1400
+F 0 "#PWR?" H 6250 1150 50  0001 C CNN
+F 1 "GND" V 6255 1272 50  0000 R CNN
+F 2 "" H 6250 1400 50  0001 C CNN
+F 3 "" H 6250 1400 50  0001 C CNN
+	1    6250 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BE73277
+P 6250 1500
+F 0 "#PWR?" H 6250 1250 50  0001 C CNN
+F 1 "GND" V 6255 1372 50  0000 R CNN
+F 2 "" H 6250 1500 50  0001 C CNN
+F 3 "" H 6250 1500 50  0001 C CNN
+	1    6250 1500
+	0    1    1    0   
+$EndComp
+Text GLabel 6400 3000 0    50   Input ~ 0
+PA9
+Text GLabel 6400 2900 0    50   Input ~ 0
+PA10
+Text GLabel 3600 2800 0    50   Input ~ 0
+PA9
+Text GLabel 3600 2900 0    50   Input ~ 0
+PA10
+Text GLabel 3600 3400 0    50   Input ~ 0
+MISO
+Text GLabel 3600 3500 0    50   Input ~ 0
+MOSI
+Text GLabel 3600 3300 0    50   Input ~ 0
+SCLK
+Text GLabel 6250 1700 0    50   Input ~ 0
+SCLK
+Text GLabel 6250 1600 0    50   Input ~ 0
+MOSI
+Text GLabel 7150 1800 2    50   Input ~ 0
+MISO
+$EndSCHEMATC

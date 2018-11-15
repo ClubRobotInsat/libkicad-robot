@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J2
 U 1 1 5BED99EE
 P 1350 1950
-F 0 "J?" H 1270 1625 50  0000 C CNN
+F 0 "J2" H 1270 1625 50  0000 C CNN
 F 1 "Alim logique" H 1270 1716 50  0000 C CNN
 F 2 "" H 1350 1950 50  0001 C CNN
 F 3 "~" H 1350 1950 50  0001 C CNN
@@ -26,10 +26,10 @@ F 3 "~" H 1350 1950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J1
 U 1 1 5BED9A92
 P 1350 1350
-F 0 "J?" H 1270 1025 50  0000 C CNN
+F 0 "J1" H 1270 1025 50  0000 C CNN
 F 1 "Alim puissance" H 1270 1116 50  0000 C CNN
 F 2 "" H 1350 1350 50  0001 C CNN
 F 3 "~" H 1350 1350 50  0001 C CNN
@@ -99,10 +99,10 @@ Wire Notes Line
 Wire Notes Line
 	800  2250 800  600 
 $Comp
-L Device:LED D?
+L Device:LED D1
 U 1 1 5BEDAB75
 P 3500 1550
-F 0 "D?" V 3538 1433 50  0000 R CNN
+F 0 "D1" V 3538 1433 50  0000 R CNN
 F 1 "LED" V 3447 1433 50  0000 R CNN
 F 2 "" H 3500 1550 50  0001 C CNN
 F 3 "~" H 3500 1550 50  0001 C CNN
@@ -110,10 +110,10 @@ F 3 "~" H 3500 1550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L dk_Transistors-Bipolar-BJT-Single:2N2219A Q?
+L dk_Transistors-Bipolar-BJT-Single:2N2219A Q1
 U 1 1 5BEDAD62
 P 3400 2000
-F 0 "Q?" H 3587 2053 60  0000 L CNN
+F 0 "Q1" H 3587 2053 60  0000 L CNN
 F 1 "2N2219A" H 3587 1947 60  0000 L CNN
 F 2 "digikey-footprints:TO-39-3" H 3600 2200 60  0001 L CNN
 F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2219-19A.PDF" H 3600 2300 60  0001 L CNN
@@ -130,10 +130,10 @@ F 12 "Active" H 3600 3200 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R2
 U 1 1 5BEDAEBC
 P 3500 1150
-F 0 "R?" H 3570 1196 50  0000 L CNN
+F 0 "R2" H 3570 1196 50  0000 L CNN
 F 1 "R" H 3570 1105 50  0000 L CNN
 F 2 "" V 3430 1150 50  0001 C CNN
 F 3 "~" H 3500 1150 50  0001 C CNN
@@ -141,10 +141,10 @@ F 3 "~" H 3500 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R1
 U 1 1 5BEDAFD3
 P 3000 2000
-F 0 "R?" V 3207 2000 50  0000 C CNN
+F 0 "R1" V 3207 2000 50  0000 C CNN
 F 1 "R" V 3116 2000 50  0000 C CNN
 F 2 "" V 2930 2000 50  0001 C CNN
 F 3 "~" H 3000 2000 50  0001 C CNN
@@ -192,10 +192,10 @@ input : 3.3v ou 5v
 Text Label 2750 2000 1    39   ~ 0
 led_input
 $Comp
-L @Robot:black_pill U?
+L @Robot:black_pill U1
 U 1 1 5BEDA0AB
 P 1800 4350
-F 0 "U?" H 1775 5565 50  0000 C CNN
+F 0 "U1" H 1775 5565 50  0000 C CNN
 F 1 "black_pill" H 1775 5474 50  0000 C CNN
 F 2 "" H 1800 4350 50  0001 C CNN
 F 3 "" H 1800 4350 50  0001 C CNN
@@ -256,7 +256,7 @@ F 3 "" H 2350 3500 50  0001 C CNN
 $EndComp
 NoConn ~ 2350 5300
 Text Notes 1050 3000 0    118  ~ 0
-microcontrolleur
+Microcontrolleur
 Wire Notes Line
 	2850 2650 2850 5550
 Wire Notes Line
@@ -265,4 +265,88 @@ Wire Notes Line
 	750  5550 750  2650
 Wire Notes Line
 	750  2650 2850 2650
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 5BEDF7D1
+P 5150 1550
+F 0 "J4" H 5070 1225 50  0000 C CNN
+F 1 "Liaison serie" H 5070 1316 50  0000 C CNN
+F 2 "" H 5150 1550 50  0001 C CNN
+F 3 "~" H 5150 1550 50  0001 C CNN
+	1    5150 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 1650 5450 1650
+Wire Wire Line
+	5350 1550 5450 1550
+Wire Wire Line
+	5350 1450 5450 1450
+$Comp
+L power:GND #PWR?
+U 1 1 5BEE094F
+P 5450 1650
+F 0 "#PWR?" H 5450 1400 50  0001 C CNN
+F 1 "GND" H 5455 1477 50  0000 C CNN
+F 2 "" H 5450 1650 50  0001 C CNN
+F 3 "" H 5450 1650 50  0001 C CNN
+	1    5450 1650
+	1    0    0    -1  
+$EndComp
+Text Label 5450 1550 0    50   ~ 0
+RX
+Text Label 5450 1450 0    50   ~ 0
+TX
+$Comp
+L Connector_Generic:Conn_01x05 J3
+U 1 1 5BEE17A8
+P 4400 1550
+F 0 "J3" H 4320 1125 50  0000 C CNN
+F 1 "Liaison SPI" H 4320 1216 50  0000 C CNN
+F 2 "" H 4400 1550 50  0001 C CNN
+F 3 "~" H 4400 1550 50  0001 C CNN
+	1    4400 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4600 1750 4700 1750
+Wire Wire Line
+	4600 1650 4700 1650
+Wire Wire Line
+	4600 1550 4700 1550
+Wire Wire Line
+	4600 1450 4700 1450
+Wire Wire Line
+	4600 1350 4700 1350
+Text Label 4700 1650 0    50   ~ 0
+SCLK
+Text Label 4700 1550 0    50   ~ 0
+MOSI
+Text Label 4700 1450 0    50   ~ 0
+MISO
+Text Label 4700 1350 0    50   ~ 0
+SS
+$Comp
+L power:GND #PWR?
+U 1 1 5BEE2984
+P 4700 1750
+F 0 "#PWR?" H 4700 1500 50  0001 C CNN
+F 1 "GND" H 4705 1577 50  0000 C CNN
+F 2 "" H 4700 1750 50  0001 C CNN
+F 3 "" H 4700 1750 50  0001 C CNN
+	1    4700 1750
+	1    0    0    -1  
+$EndComp
+Text Notes 4500 1000 0    118  ~ 0
+Connectique
+Wire Notes Line
+	4100 600  5800 600 
+Wire Notes Line
+	5800 600  5800 2550
+Wire Notes Line
+	5800 2550 4100 2550
+Wire Notes Line
+	4100 2550 4100 600 
+Text Notes 2800 1400 0    39   ~ 0
+Voir doc pour\nles valeurs des \nresistances
 $EndSCHEMATC

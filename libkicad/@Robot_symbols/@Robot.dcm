@@ -12,11 +12,6 @@ K connector connecteur alimentation puissance 12 12V
 F ~
 $ENDCMP
 #
-$CMP black_pill
-D [WIP] Carte 'Black Pill' de Robodyn, à ficher ou souder sur un pcb
-K Black Pill STM32
-$ENDCMP
-#
 $CMP connecteur_roue_codeuse
 D Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector

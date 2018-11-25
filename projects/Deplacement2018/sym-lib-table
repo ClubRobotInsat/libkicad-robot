@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name Deplacement-rescue)(type Legacy)(uri ${KIPRJMOD}/Deplacement-rescue.lib)(options "")(descr ""))
-)

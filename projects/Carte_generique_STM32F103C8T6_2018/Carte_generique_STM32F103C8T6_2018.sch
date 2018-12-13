@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Carte_generique_STM32F103C8T6_2018-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -259,17 +258,6 @@ F 3 "" H 7450 1300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Regulator_Linear:AMS1117 U2
-U 1 1 5C08553E
-P 2900 1250
-F 0 "U2" H 2900 1492 50  0000 C CNN
-F 1 "AMS1117" H 2900 1401 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2900 1450 50  0001 C CNN
-F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 3000 1000 50  0001 C CNN
-	1    2900 1250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x03 J2
 U 1 1 5C08F1FF
 P 1350 1850
@@ -303,7 +291,7 @@ L Device:C C1
 U 1 1 5C093824
 P 2500 1400
 F 0 "C1" H 2615 1446 50  0000 L CNN
-F 1 "C" H 2615 1355 50  0000 L CNN
+F 1 "1u" H 2615 1355 50  0000 L CNN
 F 2 "" H 2538 1250 50  0001 C CNN
 F 3 "~" H 2500 1400 50  0001 C CNN
 	1    2500 1400
@@ -326,41 +314,14 @@ Wire Wire Line
 	2400 1250 2500 1250
 Connection ~ 2500 1250
 $Comp
-L Device:R R1
-U 1 1 5C09480B
-P 3300 1400
-F 0 "R1" H 3370 1446 50  0000 L CNN
-F 1 "R" H 3370 1355 50  0000 L CNN
-F 2 "" V 3230 1400 50  0001 C CNN
-F 3 "~" H 3300 1400 50  0001 C CNN
-	1    3300 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5C094963
-P 3300 1700
-F 0 "R2" H 3370 1746 50  0000 L CNN
-F 1 "R" H 3370 1655 50  0000 L CNN
-F 2 "" V 3230 1700 50  0001 C CNN
-F 3 "~" H 3300 1700 50  0001 C CNN
-	1    3300 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2900 1550 3300 1550
-Connection ~ 3300 1550
-Wire Wire Line
-	3200 1250 3300 1250
-$Comp
 L power:GND #PWR?
 U 1 1 5C095160
-P 3300 1850
-F 0 "#PWR?" H 3300 1600 50  0001 C CNN
-F 1 "GND" H 3305 1677 50  0000 C CNN
-F 2 "" H 3300 1850 50  0001 C CNN
-F 3 "" H 3300 1850 50  0001 C CNN
-	1    3300 1850
+P 2900 1550
+F 0 "#PWR?" H 2900 1300 50  0001 C CNN
+F 1 "GND" H 2905 1377 50  0000 C CNN
+F 2 "" H 2900 1550 50  0001 C CNN
+F 3 "" H 2900 1550 50  0001 C CNN
+	1    2900 1550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -374,9 +335,6 @@ F 3 "" H 3350 1250 50  0001 C CNN
 	1    3350 1250
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3300 1250 3350 1250
-Connection ~ 3300 1250
 Text Notes 2250 950  0    50   ~ 0
 Vout = Vref(1+R2/R1) + Iadj*R2
 $Comp
@@ -815,8 +773,6 @@ F 3 "" H 5300 1350 50  0001 C CNN
 	1    5300 1350
 	1    0    0    -1  
 $EndComp
-Text Label 4050 1700 2    50   ~ 0
-3.3V_logic
 Text Label 5450 1700 0    50   ~ 0
 5V_logic
 Wire Wire Line
@@ -1061,4 +1017,44 @@ Wire Notes Line
 	750  5200 2850 5200
 Wire Notes Line
 	750  5200 750  2650
+Wire Wire Line
+	3200 1250 3250 1250
+Text Label 4050 1700 2    50   ~ 0
+3.3V_logic
+$Comp
+L Regulator_Linear:TC1262-33 U?
+U 1 1 5C128DAC
+P 2900 1250
+F 0 "U?" H 2900 1492 50  0000 C CNN
+F 1 "TC1262-33" H 2900 1401 50  0000 C CNN
+F 2 "" H 2900 1475 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21373C.pdf" H 2900 950 50  0001 C CNN
+	1    2900 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C129261
+P 3250 1400
+F 0 "C?" H 3365 1446 50  0000 L CNN
+F 1 "1u" H 3365 1355 50  0000 L CNN
+F 2 "" H 3288 1250 50  0001 C CNN
+F 3 "~" H 3250 1400 50  0001 C CNN
+	1    3250 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 3250 1250
+Wire Wire Line
+	3250 1250 3350 1250
+$Comp
+L power:GND #PWR?
+U 1 1 5C1292E3
+P 3250 1550
+F 0 "#PWR?" H 3250 1300 50  0001 C CNN
+F 1 "GND" H 3255 1377 50  0000 C CNN
+F 2 "" H 3250 1550 50  0001 C CNN
+F 3 "" H 3250 1550 50  0001 C CNN
+	1    3250 1550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

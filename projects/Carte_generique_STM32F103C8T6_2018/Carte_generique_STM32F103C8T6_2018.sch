@@ -81,7 +81,7 @@ L Device:LED D1
 U 1 1 5BEDAB75
 P 4200 4150
 F 0 "D1" V 4238 4033 50  0000 R CNN
-F 1 "LED" V 4147 4033 50  0000 R CNN
+F 1 "LED_hardfault_jaune" V 4147 4033 50  0000 R CNN
 F 2 "" H 4200 4150 50  0001 C CNN
 F 3 "~" H 4200 4150 50  0001 C CNN
 	1    4200 4150
@@ -428,7 +428,7 @@ L Device:LED D2
 U 1 1 5C0A0ECC
 P 5650 4150
 F 0 "D2" V 5688 4033 50  0000 R CNN
-F 1 "LED" V 5597 4033 50  0000 R CNN
+F 1 "LED_communication_vert" V 5597 4033 50  0000 R CNN
 F 2 "" H 5650 4150 50  0001 C CNN
 F 3 "~" H 5650 4150 50  0001 C CNN
 	1    5650 4150
@@ -519,7 +519,7 @@ L Device:LED D3
 U 1 1 5C0A15FF
 P 7000 4150
 F 0 "D3" V 7038 4033 50  0000 R CNN
-F 1 "LED" V 6947 4033 50  0000 R CNN
+F 1 "LED_ucontrolleur_vert" V 6947 4033 50  0000 R CNN
 F 2 "" H 7000 4150 50  0001 C CNN
 F 3 "~" H 7000 4150 50  0001 C CNN
 	1    7000 4150
@@ -610,7 +610,7 @@ L Device:LED D4
 U 1 1 5C0A1DC8
 P 8350 4150
 F 0 "D4" V 8388 4033 50  0000 R CNN
-F 1 "LED" V 8297 4033 50  0000 R CNN
+F 1 "LED_alimentation_rouge" V 8297 4033 50  0000 R CNN
 F 2 "" H 8350 4150 50  0001 C CNN
 F 3 "~" H 8350 4150 50  0001 C CNN
 	1    8350 4150
@@ -673,7 +673,7 @@ F 3 "" H 8350 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 7550 4750 0    39   ~ 0
-input : 3.3v ou 5v
+input :Vbat
 Text Label 7600 4600 1    39   ~ 0
 led_input
 $Comp
@@ -697,11 +697,7 @@ F 12 "Active" H 8450 5800 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	3300 5150 9100 5150
-Wire Notes Line
-	9100 3200 9100 5150
-Wire Notes Line
-	3300 3200 9100 3200
+	9650 3200 9650 5150
 Text Notes 700  7600 0    50   ~ 0
 Doc pour le 3.3 -> 5\nhttps://www.hobbytronics.co.uk/mosfet-voltage-level-converter
 $Comp
@@ -1057,4 +1053,8 @@ F 3 "" H 3250 1550 50  0001 C CNN
 	1    3250 1550
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	3300 5150 9650 5150
+Wire Notes Line
+	3300 3200 9650 3200
 $EndSCHEMATC

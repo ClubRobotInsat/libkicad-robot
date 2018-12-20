@@ -1,4 +1,4 @@
-(module HE14-5_horizontal (layer F.Cu) (tedit 5BDC6227)
+(module HE14-5_horizontal (layer F.Cu) (tedit 5C1BBF71)
   (tags "HE13 3 logique")
   (fp_text reference REF** (at 2.54 -2.54) (layer F.SilkS) hide
     (effects (font (size 1 1) (thickness 0.15)))
@@ -18,11 +18,11 @@
   )
   (fp_line (start -3.81 -8.89) (end 8.89 -8.89) (layer F.Fab) (width 0.15))
   (fp_line (start -3.81 5.08) (end 8.89 5.08) (layer F.Fab) (width 0.15))
-  (pad 3 thru_hole oval (at 2.54 3.81) (size 1.524 2.54) (drill 0.762) (layers *.Cu *.Mask))
+  (pad 3 thru_hole oval (at 2.54 3.81) (size 1.524 2.54) (drill 1) (layers *.Cu *.Mask))
   (pad 1 thru_hole oval (at -2.54 3.81) (size 1.524 2.54) (drill 1) (layers *.Cu *.Mask))
-  (pad 2 thru_hole oval (at 0 3.81) (size 1.524 2.54) (drill 0.762) (layers *.Cu *.Mask))
-  (pad 4 thru_hole oval (at 5.08 3.81) (size 1.524 2.54) (drill 0.762) (layers *.Cu *.Mask))
-  (pad 5 thru_hole oval (at 7.62 3.81) (size 1.524 2.54) (drill 0.762) (layers *.Cu *.Mask))
+  (pad 2 thru_hole oval (at 0 3.81) (size 1.524 2.54) (drill 1) (layers *.Cu *.Mask))
+  (pad 4 thru_hole oval (at 5.08 3.81) (size 1.524 2.54) (drill 1) (layers *.Cu *.Mask))
+  (pad 5 thru_hole oval (at 7.62 3.81) (size 1.524 2.54) (drill 1) (layers *.Cu *.Mask))
   (model /Users/alex/Desktop/c-281698-3-g-3d.stp
     (offset (xyz 0 9 3))
     (scale (xyz 1 1 1))

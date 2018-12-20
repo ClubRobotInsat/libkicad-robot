@@ -793,38 +793,6 @@ F 3 "~" H 1250 4100 50  0001 C CNN
 	1    1250 4100
 	1    0    0    -1  
 $EndComp
-Text Label 850  3200 0    50   ~ 0
-B12
-Text Label 850  3300 0    50   ~ 0
-B13
-Text Label 850  3400 0    50   ~ 0
-B14
-Text Label 850  3500 0    50   ~ 0
-B15
-Text Label 850  3600 0    50   ~ 0
-A8
-Text Label 850  3700 0    50   ~ 0
-A9
-Text Label 850  3800 0    50   ~ 0
-A10
-Text Label 850  3900 0    50   ~ 0
-A11
-Text Label 850  4000 0    50   ~ 0
-A12
-Text Label 850  4100 0    50   ~ 0
-A15
-Text Label 850  4200 0    50   ~ 0
-B3
-Text Label 850  4300 0    50   ~ 0
-B4
-Text Label 850  4400 0    50   ~ 0
-B5
-Text Label 850  4500 0    50   ~ 0
-B6
-Text Label 850  4600 0    50   ~ 0
-B7
-Text Label 850  4800 0    50   ~ 0
-B9
 $Comp
 L power:GND #PWR?
 U 1 1 5C0A3C99
@@ -858,104 +826,6 @@ F 3 "" H 2200 3300 50  0001 C CNN
 	1    2200 3300
 	0    1    1    0   
 $EndComp
-Text Label 2000 3500 0    50   ~ 0
-RST
-Text Label 2000 3600 0    50   ~ 0
-B11
-Text Label 2000 3700 0    50   ~ 0
-B10
-Text Label 2000 3800 0    50   ~ 0
-B1
-Text Label 2000 3900 0    50   ~ 0
-B0
-Text Label 2000 4000 0    50   ~ 0
-A7
-Text Label 2000 4100 0    50   ~ 0
-A6
-Text Label 2000 4200 0    50   ~ 0
-A5
-Text Label 2000 4300 0    50   ~ 0
-A4
-Text Label 2000 4400 0    50   ~ 0
-A3
-Text Label 2000 4500 0    50   ~ 0
-A2
-Text Label 2000 4600 0    50   ~ 0
-A1
-Text Label 2000 4700 0    50   ~ 0
-A0
-Text Label 2000 4800 0    50   ~ 0
-C15
-Text Label 2000 4900 0    50   ~ 0
-C14
-Text Label 2000 5000 0    50   ~ 0
-C13
-Wire Wire Line
-	2200 5000 2000 5000
-Wire Wire Line
-	2200 4900 2000 4900
-Wire Wire Line
-	2200 4800 2000 4800
-Wire Wire Line
-	2200 4700 2000 4700
-Wire Wire Line
-	2200 4600 2000 4600
-Wire Wire Line
-	2200 4500 2000 4500
-Wire Wire Line
-	2200 4400 2000 4400
-Wire Wire Line
-	2200 4300 2000 4300
-Wire Wire Line
-	2200 4200 2000 4200
-Wire Wire Line
-	2200 4100 2000 4100
-Wire Wire Line
-	2200 4000 2000 4000
-Wire Wire Line
-	2200 3900 2000 3900
-Wire Wire Line
-	2200 3800 2000 3800
-Wire Wire Line
-	2200 3700 2000 3700
-Wire Wire Line
-	2200 3600 2000 3600
-Wire Wire Line
-	2200 3500 2000 3500
-Wire Wire Line
-	1050 3200 850  3200
-Wire Wire Line
-	1050 3300 850  3300
-Wire Wire Line
-	1050 3400 850  3400
-Wire Wire Line
-	1050 3500 850  3500
-Wire Wire Line
-	1050 3600 850  3600
-Wire Wire Line
-	1050 3700 850  3700
-Wire Wire Line
-	1050 3800 850  3800
-Wire Wire Line
-	1050 3900 850  3900
-Wire Wire Line
-	1050 4000 850  4000
-Wire Wire Line
-	1050 4100 850  4100
-Wire Wire Line
-	1050 4200 850  4200
-Wire Wire Line
-	1050 4300 850  4300
-Wire Wire Line
-	1050 4400 850  4400
-Wire Wire Line
-	1050 4500 850  4500
-Wire Wire Line
-	1050 4600 850  4600
-Wire Wire Line
-	1050 4700 850  4700
-Wire Wire Line
-	1050 4800 850  4800
 $Comp
 L power:+5V #PWR?
 U 1 1 5C0FF0FE
@@ -989,11 +859,6 @@ F 3 "" H 2200 3400 50  0001 C CNN
 	1    2200 3400
 	0    -1   -1   0   
 $EndComp
-Text Label 2000 5100 0    50   ~ 0
-VBT
-Wire Wire Line
-	2200 5100 2000 5100
-NoConn ~ 2000 5100
 Wire Notes Line
 	2700 2650 2700 5200
 Wire Notes Line
@@ -1044,32 +909,6 @@ Wire Notes Line
 	3150 5150 9500 5150
 Wire Notes Line
 	3150 3200 9500 3200
-NoConn ~ 2000 5000
-NoConn ~ 2000 4900
-NoConn ~ 2000 4800
-NoConn ~ 2000 4700
-NoConn ~ 2000 4600
-NoConn ~ 2000 4500
-NoConn ~ 2000 4400
-NoConn ~ 2000 4300
-NoConn ~ 850  4800
-NoConn ~ 850  4600
-NoConn ~ 850  4500
-NoConn ~ 850  4400
-NoConn ~ 850  4300
-NoConn ~ 850  3200
-NoConn ~ 850  3300
-NoConn ~ 850  3400
-NoConn ~ 850  3500
-NoConn ~ 850  3600
-NoConn ~ 850  3700
-NoConn ~ 850  3800
-NoConn ~ 850  3900
-NoConn ~ 850  4000
-NoConn ~ 850  4100
-NoConn ~ 850  4200
-NoConn ~ 2000 3500
-NoConn ~ 2000 3600
 $Comp
 L Connector:Conn_01x20_Female J4
 U 1 1 5C096C54
@@ -1081,15 +920,6 @@ F 3 "~" H 2400 4100 50  0001 C CNN
 	1    2400 4100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2000 3700
-NoConn ~ 2000 3800
-NoConn ~ 2000 3900
-NoConn ~ 2000 4000
-NoConn ~ 2000 4100
-NoConn ~ 2000 4200
-Text Label 850  4700 0    50   ~ 0
-B8
-NoConn ~ 850  4700
 NoConn ~ 7450 1700
 NoConn ~ 6550 1500
 NoConn ~ 6550 1600
@@ -1150,4 +980,118 @@ F 3 "~" H 1700 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 1700 1850
+Text Notes 2450 5100 0    50   ~ 0
+VBT
+Text Notes 2450 5000 0    50   ~ 0
+C13\n
+Text Notes 2450 4900 0    50   ~ 0
+C14
+Text Notes 2450 4800 0    50   ~ 0
+C15
+Text Notes 2450 4700 0    50   ~ 0
+A0
+Text Notes 2450 4600 0    50   ~ 0
+A1
+Text Notes 2450 4500 0    50   ~ 0
+A2
+Text Notes 2450 4400 0    50   ~ 0
+A3
+Text Notes 2450 4300 0    50   ~ 0
+A4
+Text Notes 2450 4200 0    50   ~ 0
+A5
+Text Notes 2450 4100 0    50   ~ 0
+A6
+Text Notes 2450 4000 0    50   ~ 0
+A7
+Text Notes 2450 3900 0    50   ~ 0
+B0
+Text Notes 2450 3800 0    50   ~ 0
+B1
+Text Notes 2450 3700 0    50   ~ 0
+B10
+Text Notes 2450 3600 0    50   ~ 0
+B11
+Text Notes 2450 3500 0    50   ~ 0
+RST
+Text Notes 2450 3400 0    50   ~ 0
++3.3V
+Text Notes 2450 3300 0    50   ~ 0
+GND
+Text Notes 2450 3200 0    50   ~ 0
+GND
+Text Notes 1300 5100 0    50   ~ 0
++3.3V
+Text Notes 1300 5000 0    50   ~ 0
+GND
+Text Notes 1300 4900 0    50   ~ 0
++5V
+Text Notes 1300 4800 0    50   ~ 0
+B9
+Text Notes 1300 4700 0    50   ~ 0
+B8
+Text Notes 1300 4600 0    50   ~ 0
+B7
+Text Notes 1300 4500 0    50   ~ 0
+B6
+Text Notes 1300 4400 0    50   ~ 0
+B5
+Text Notes 1300 4300 0    50   ~ 0
+B4
+Text Notes 1300 4200 0    50   ~ 0
+B3
+Text Notes 1300 4100 0    50   ~ 0
+A15
+Text Notes 1300 4000 0    50   ~ 0
+A12
+Text Notes 1300 3900 0    50   ~ 0
+A11
+Text Notes 1300 3800 0    50   ~ 0
+A10
+Text Notes 1300 3700 0    50   ~ 0
+A9
+Text Notes 1300 3600 0    50   ~ 0
+A8
+Text Notes 1300 3500 0    50   ~ 0
+B15
+Text Notes 1300 3400 0    50   ~ 0
+B14
+Text Notes 1300 3300 0    50   ~ 0
+B13
+Text Notes 1300 3200 0    50   ~ 0
+B12
+NoConn ~ 2200 5100
+NoConn ~ 2200 5000
+NoConn ~ 2200 4900
+NoConn ~ 2200 4800
+NoConn ~ 2200 4700
+NoConn ~ 2200 4600
+NoConn ~ 2200 4500
+NoConn ~ 2200 4400
+NoConn ~ 2200 4300
+NoConn ~ 2200 4200
+NoConn ~ 2200 4100
+NoConn ~ 2200 4000
+NoConn ~ 2200 3900
+NoConn ~ 2200 3800
+NoConn ~ 2200 3700
+NoConn ~ 2200 3600
+NoConn ~ 2200 3500
+NoConn ~ 1050 4800
+NoConn ~ 1050 4700
+NoConn ~ 1050 4600
+NoConn ~ 1050 4500
+NoConn ~ 1050 4400
+NoConn ~ 1050 4300
+NoConn ~ 1050 4200
+NoConn ~ 1050 4100
+NoConn ~ 1050 4000
+NoConn ~ 1050 3900
+NoConn ~ 1050 3800
+NoConn ~ 1050 3700
+NoConn ~ 1050 3600
+NoConn ~ 1050 3500
+NoConn ~ 1050 3400
+NoConn ~ 1050 3300
+NoConn ~ 1050 3200
 $EndSCHEMATC

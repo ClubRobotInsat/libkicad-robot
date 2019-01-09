@@ -483,7 +483,7 @@ U 1 1 5C0965A6
 P 1250 4100
 F 0 "J1" H 1277 4076 50  0000 L CNN
 F 1 "Conn_01x20_Female" H 1277 3985 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Vertical" H 1250 4100 50  0001 C CNN
+F 2 "@Robot:PinSocket_1x20_P2.54mm_Vertical_Long_Pads" H 1250 4100 50  0001 C CNN
 F 3 "~" H 1250 4100 50  0001 C CNN
 	1    1250 4100
 	1    0    0    -1  
@@ -610,7 +610,7 @@ U 1 1 5C096C54
 P 2400 4100
 F 0 "J4" H 2427 4076 50  0000 L CNN
 F 1 "Conn_01x20_Female" H 2427 3985 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Vertical" H 2400 4100 50  0001 C CNN
+F 2 "@Robot:PinSocket_1x20_P2.54mm_Vertical_Long_Pads" H 2400 4100 50  0001 C CNN
 F 3 "~" H 2400 4100 50  0001 C CNN
 	1    2400 4100
 	1    0    0    -1  

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Carte_generique_STM32F103C8T6_2018-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_01x02 J1
+L Connector_Generic:Conn_01x02 J2
 U 1 1 5BED9A92
 P 1350 1350
-F 0 "J1" H 1270 1025 50  0000 C CNN
+F 0 "J2" H 1270 1025 50  0000 C CNN
 F 1 "Alim puissance" H 1270 1116 50  0000 C CNN
 F 2 "@Robot:HE14-2_horizontal" H 1350 1350 50  0001 C CNN
 F 3 "~" H 1350 1350 50  0001 C CNN
@@ -88,41 +89,28 @@ F 3 "~" H 4050 4150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R3
+L Device:R R1
 U 1 1 5BEDAEBC
 P 4050 3750
-F 0 "R3" H 4120 3796 50  0000 L CNN
-F 1 "R" H 4120 3705 50  0000 L CNN
+F 0 "R1" H 4120 3796 50  0000 L CNN
+F 1 "150" H 4120 3705 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3980 3750 50  0001 C CNN
 F 3 "~" H 4050 3750 50  0001 C CNN
 	1    4050 3750
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 5BEDAFD3
-P 3550 4600
-F 0 "R1" V 3757 4600 50  0000 C CNN
-F 1 "R" V 3666 4600 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3480 4600 50  0001 C CNN
-F 3 "~" H 3550 4600 50  0001 C CNN
-	1    3550 4600
-	0    -1   -1   0   
 $EndComp
 Text Notes 3450 2950 0    118  ~ 0
 Led
 Wire Wire Line
 	4050 3600 4050 3500
 Wire Wire Line
-	3400 4600 3300 4600
+	3750 4600 3650 4600
 Wire Wire Line
 	4050 4800 4050 4900
 Wire Wire Line
 	4050 4400 4050 4300
 Wire Wire Line
 	4050 3900 4050 4000
-Wire Wire Line
-	3700 4600 3750 4600
 $Comp
 L power:GND #PWR?
 U 1 1 5BEDC15B
@@ -147,7 +135,7 @@ F 3 "" H 4050 3500 50  0001 C CNN
 $EndComp
 Text Notes 3250 4750 0    39   ~ 0
 input : 3.3v ou 5v
-Text Label 3300 4600 1    39   ~ 0
+Text Label 3650 4600 1    39   ~ 0
 led_input
 Wire Notes Line
 	3150 5150 3150 3200
@@ -205,26 +193,6 @@ F 3 "/home/paul/nextcloud/Documents/INSA/Club Robot/DOC/w5500/W5500.pdf" H 7000 
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Transistors-Bipolar-BJT-Single:2N2222A Q1
-U 1 1 5C088656
-P 3950 4600
-F 0 "Q1" H 4137 4653 60  0000 L CNN
-F 1 "2N2222A" H 4137 4547 60  0000 L CNN
-F 2 "digikey-footprints:TO-18-3" H 4150 4800 60  0001 L CNN
-F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 4150 4900 60  0001 L CNN
-F 4 "2N2222ACS-ND" H 4150 5000 60  0001 L CNN "Digi-Key_PN"
-F 5 "2N2222A" H 4150 5100 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 4150 5200 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 4150 5300 60  0001 L CNN "Family"
-F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 4150 5400 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/central-semiconductor-corp/2N2222A/2N2222ACS-ND/4806845" H 4150 5500 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 40V 0.8A TO-18" H 4150 5600 60  0001 L CNN "Description"
-F 11 "Central Semiconductor Corp" H 4150 5700 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 4150 5800 60  0001 L CNN "Status"
-	1    3950 4600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5C088D02
 P 6550 1300
@@ -258,10 +226,10 @@ F 3 "" H 7450 1300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J2
+L Connector_Generic:Conn_01x03 J3
 U 1 1 5C08F1FF
 P 1350 1850
-F 0 "J2" H 1270 1525 50  0000 C CNN
+F 0 "J3" H 1270 1525 50  0000 C CNN
 F 1 "Alim logique" H 1270 1616 50  0000 C CNN
 F 2 "@Robot:HE14-3_horizontal" H 1350 1850 50  0001 C CNN
 F 3 "~" H 1350 1850 50  0001 C CNN
@@ -423,279 +391,6 @@ PWM_in_B
 Text Label 7450 2200 0    50   ~ 0
 PWM_out
 NoConn ~ 7350 2100
-$Comp
-L Device:LED D2
-U 1 1 5C0A0ECC
-P 5500 4150
-F 0 "D2" V 5538 4033 50  0000 R CNN
-F 1 "LED_communication_vert" V 5447 4033 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5500 4150 50  0001 C CNN
-F 3 "~" H 5500 4150 50  0001 C CNN
-	1    5500 4150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 5C0A0ED3
-P 5500 3750
-F 0 "R6" H 5570 3796 50  0000 L CNN
-F 1 "R" H 5570 3705 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5430 3750 50  0001 C CNN
-F 3 "~" H 5500 3750 50  0001 C CNN
-	1    5500 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 5C0A0EDA
-P 5000 4600
-F 0 "R4" V 5207 4600 50  0000 C CNN
-F 1 "R" V 5116 4600 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4930 4600 50  0001 C CNN
-F 3 "~" H 5000 4600 50  0001 C CNN
-	1    5000 4600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5500 3600 5500 3500
-Wire Wire Line
-	4850 4600 4750 4600
-Wire Wire Line
-	5500 4800 5500 4900
-Wire Wire Line
-	5500 4400 5500 4300
-Wire Wire Line
-	5500 3900 5500 4000
-Wire Wire Line
-	5150 4600 5200 4600
-$Comp
-L power:GND #PWR?
-U 1 1 5C0A0EE7
-P 5500 4900
-F 0 "#PWR?" H 5500 4650 50  0001 C CNN
-F 1 "GND" H 5505 4727 50  0000 C CNN
-F 2 "" H 5500 4900 50  0001 C CNN
-F 3 "" H 5500 4900 50  0001 C CNN
-	1    5500 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5C0A0EED
-P 5500 3500
-F 0 "#PWR?" H 5500 3350 50  0001 C CNN
-F 1 "+5V" H 5515 3673 50  0000 C CNN
-F 2 "" H 5500 3500 50  0001 C CNN
-F 3 "" H 5500 3500 50  0001 C CNN
-	1    5500 3500
-	1    0    0    -1  
-$EndComp
-Text Notes 4700 4750 0    39   ~ 0
-input : 3.3v ou 5v
-Text Label 4750 4600 1    39   ~ 0
-led_input
-$Comp
-L dk_Transistors-Bipolar-BJT-Single:2N2222A Q3
-U 1 1 5C0A0EFE
-P 5400 4600
-F 0 "Q3" H 5587 4653 60  0000 L CNN
-F 1 "2N2222A" H 5587 4547 60  0000 L CNN
-F 2 "digikey-footprints:TO-18-3" H 5600 4800 60  0001 L CNN
-F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 5600 4900 60  0001 L CNN
-F 4 "2N2222ACS-ND" H 5600 5000 60  0001 L CNN "Digi-Key_PN"
-F 5 "2N2222A" H 5600 5100 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5600 5200 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 5600 5300 60  0001 L CNN "Family"
-F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 5600 5400 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/central-semiconductor-corp/2N2222A/2N2222ACS-ND/4806845" H 5600 5500 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 40V 0.8A TO-18" H 5600 5600 60  0001 L CNN "Description"
-F 11 "Central Semiconductor Corp" H 5600 5700 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5600 5800 60  0001 L CNN "Status"
-	1    5400 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D3
-U 1 1 5C0A15FF
-P 6850 4150
-F 0 "D3" V 6888 4033 50  0000 R CNN
-F 1 "LED_ucontrolleur_vert" V 6797 4033 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6850 4150 50  0001 C CNN
-F 3 "~" H 6850 4150 50  0001 C CNN
-	1    6850 4150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R8
-U 1 1 5C0A1606
-P 6850 3750
-F 0 "R8" H 6920 3796 50  0000 L CNN
-F 1 "R" H 6920 3705 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6780 3750 50  0001 C CNN
-F 3 "~" H 6850 3750 50  0001 C CNN
-	1    6850 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R7
-U 1 1 5C0A160D
-P 6350 4600
-F 0 "R7" V 6557 4600 50  0000 C CNN
-F 1 "R" V 6466 4600 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6280 4600 50  0001 C CNN
-F 3 "~" H 6350 4600 50  0001 C CNN
-	1    6350 4600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6850 3600 6850 3500
-Wire Wire Line
-	6200 4600 6100 4600
-Wire Wire Line
-	6850 4800 6850 4900
-Wire Wire Line
-	6850 4400 6850 4300
-Wire Wire Line
-	6850 3900 6850 4000
-Wire Wire Line
-	6500 4600 6550 4600
-$Comp
-L power:GND #PWR?
-U 1 1 5C0A161A
-P 6850 4900
-F 0 "#PWR?" H 6850 4650 50  0001 C CNN
-F 1 "GND" H 6855 4727 50  0000 C CNN
-F 2 "" H 6850 4900 50  0001 C CNN
-F 3 "" H 6850 4900 50  0001 C CNN
-	1    6850 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5C0A1620
-P 6850 3500
-F 0 "#PWR?" H 6850 3350 50  0001 C CNN
-F 1 "+5V" H 6865 3673 50  0000 C CNN
-F 2 "" H 6850 3500 50  0001 C CNN
-F 3 "" H 6850 3500 50  0001 C CNN
-	1    6850 3500
-	1    0    0    -1  
-$EndComp
-Text Notes 6050 4750 0    39   ~ 0
-input : 3.3v ou 5v
-Text Label 6100 4600 1    39   ~ 0
-led_input
-$Comp
-L dk_Transistors-Bipolar-BJT-Single:2N2222A Q4
-U 1 1 5C0A1631
-P 6750 4600
-F 0 "Q4" H 6937 4653 60  0000 L CNN
-F 1 "2N2222A" H 6937 4547 60  0000 L CNN
-F 2 "digikey-footprints:TO-18-3" H 6950 4800 60  0001 L CNN
-F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 6950 4900 60  0001 L CNN
-F 4 "2N2222ACS-ND" H 6950 5000 60  0001 L CNN "Digi-Key_PN"
-F 5 "2N2222A" H 6950 5100 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 6950 5200 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 6950 5300 60  0001 L CNN "Family"
-F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 6950 5400 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/central-semiconductor-corp/2N2222A/2N2222ACS-ND/4806845" H 6950 5500 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 40V 0.8A TO-18" H 6950 5600 60  0001 L CNN "Description"
-F 11 "Central Semiconductor Corp" H 6950 5700 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6950 5800 60  0001 L CNN "Status"
-	1    6750 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D4
-U 1 1 5C0A1DC8
-P 8200 4150
-F 0 "D4" V 8238 4033 50  0000 R CNN
-F 1 "LED_alimentation_rouge" V 8147 4033 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8200 4150 50  0001 C CNN
-F 3 "~" H 8200 4150 50  0001 C CNN
-	1    8200 4150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R10
-U 1 1 5C0A1DCF
-P 8200 3750
-F 0 "R10" H 8270 3796 50  0000 L CNN
-F 1 "R" H 8270 3705 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8130 3750 50  0001 C CNN
-F 3 "~" H 8200 3750 50  0001 C CNN
-	1    8200 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R9
-U 1 1 5C0A1DD6
-P 7700 4600
-F 0 "R9" V 7907 4600 50  0000 C CNN
-F 1 "R" V 7816 4600 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7630 4600 50  0001 C CNN
-F 3 "~" H 7700 4600 50  0001 C CNN
-	1    7700 4600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8200 3600 8200 3500
-Wire Wire Line
-	7550 4600 7450 4600
-Wire Wire Line
-	8200 4800 8200 4900
-Wire Wire Line
-	8200 4400 8200 4300
-Wire Wire Line
-	8200 3900 8200 4000
-Wire Wire Line
-	7850 4600 7900 4600
-$Comp
-L power:GND #PWR?
-U 1 1 5C0A1DE3
-P 8200 4900
-F 0 "#PWR?" H 8200 4650 50  0001 C CNN
-F 1 "GND" H 8205 4727 50  0000 C CNN
-F 2 "" H 8200 4900 50  0001 C CNN
-F 3 "" H 8200 4900 50  0001 C CNN
-	1    8200 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5C0A1DE9
-P 8200 3500
-F 0 "#PWR?" H 8200 3350 50  0001 C CNN
-F 1 "+5V" H 8215 3673 50  0000 C CNN
-F 2 "" H 8200 3500 50  0001 C CNN
-F 3 "" H 8200 3500 50  0001 C CNN
-	1    8200 3500
-	1    0    0    -1  
-$EndComp
-Text Notes 7400 4750 0    39   ~ 0
-input :Vbat
-Text Label 7450 4600 1    39   ~ 0
-led_input
-$Comp
-L dk_Transistors-Bipolar-BJT-Single:2N2222A Q5
-U 1 1 5C0A1DFA
-P 8100 4600
-F 0 "Q5" H 8287 4653 60  0000 L CNN
-F 1 "2N2222A" H 8287 4547 60  0000 L CNN
-F 2 "digikey-footprints:TO-18-3" H 8300 4800 60  0001 L CNN
-F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 8300 4900 60  0001 L CNN
-F 4 "2N2222ACS-ND" H 8300 5000 60  0001 L CNN "Digi-Key_PN"
-F 5 "2N2222A" H 8300 5100 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 8300 5200 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 8300 5300 60  0001 L CNN "Family"
-F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 8300 5400 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/central-semiconductor-corp/2N2222A/2N2222ACS-ND/4806845" H 8300 5500 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 40V 0.8A TO-18" H 8300 5600 60  0001 L CNN "Description"
-F 11 "Central Semiconductor Corp" H 8300 5700 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 8300 5800 60  0001 L CNN "Status"
-	1    8100 4600
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	9500 3200 9500 5150
 Text Notes 700  7600 0    50   ~ 0
@@ -723,10 +418,10 @@ F 3 "~" H 4200 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R5
+L Device:R R3
 U 1 1 5C0A8CC9
 P 5300 1550
-F 0 "R5" H 5370 1596 50  0000 L CNN
+F 0 "R3" H 5370 1596 50  0000 L CNN
 F 1 "R" H 5370 1505 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5230 1550 50  0001 C CNN
 F 3 "~" H 5300 1550 50  0001 C CNN
@@ -783,10 +478,10 @@ Wire Notes Line
 Wire Notes Line
 	5800 600  5800 2250
 $Comp
-L Connector:Conn_01x20_Female J3
+L Connector:Conn_01x20_Female J1
 U 1 1 5C0965A6
 P 1250 4100
-F 0 "J3" H 1277 4076 50  0000 L CNN
+F 0 "J1" H 1277 4076 50  0000 L CNN
 F 1 "Conn_01x20_Female" H 1277 3985 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Vertical" H 1250 4100 50  0001 C CNN
 F 3 "~" H 1250 4100 50  0001 C CNN
@@ -1094,4 +789,222 @@ NoConn ~ 1050 3500
 NoConn ~ 1050 3400
 NoConn ~ 1050 3300
 NoConn ~ 1050 3200
+$Comp
+L Device:Q_NMOS_GSD Q1
+U 1 1 5C3683D7
+P 3950 4600
+F 0 "Q1" H 4156 4646 50  0000 L CNN
+F 1 "PMF370XN" H 4156 4555 50  0000 L CNN
+F 2 "" H 4150 4700 50  0001 C CNN
+F 3 "~" H 3950 4600 50  0001 C CNN
+	1    3950 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5C36A160
+P 5350 4150
+F 0 "D2" V 5388 4033 50  0000 R CNN
+F 1 "LED_communication_vert" V 5297 4033 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5350 4150 50  0001 C CNN
+F 3 "~" H 5350 4150 50  0001 C CNN
+	1    5350 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5C36A167
+P 5350 3750
+F 0 "R4" H 5420 3796 50  0000 L CNN
+F 1 "150" H 5420 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5280 3750 50  0001 C CNN
+F 3 "~" H 5350 3750 50  0001 C CNN
+	1    5350 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3600 5350 3500
+Wire Wire Line
+	5050 4600 4950 4600
+Wire Wire Line
+	5350 4800 5350 4900
+Wire Wire Line
+	5350 4400 5350 4300
+Wire Wire Line
+	5350 3900 5350 4000
+$Comp
+L power:GND #PWR?
+U 1 1 5C36A173
+P 5350 4900
+F 0 "#PWR?" H 5350 4650 50  0001 C CNN
+F 1 "GND" H 5355 4727 50  0000 C CNN
+F 2 "" H 5350 4900 50  0001 C CNN
+F 3 "" H 5350 4900 50  0001 C CNN
+	1    5350 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C36A179
+P 5350 3500
+F 0 "#PWR?" H 5350 3350 50  0001 C CNN
+F 1 "+5V" H 5365 3673 50  0000 C CNN
+F 2 "" H 5350 3500 50  0001 C CNN
+F 3 "" H 5350 3500 50  0001 C CNN
+	1    5350 3500
+	1    0    0    -1  
+$EndComp
+Text Notes 4550 4750 0    39   ~ 0
+input : 3.3v ou 5v
+Text Label 4950 4600 1    39   ~ 0
+led_input
+$Comp
+L Device:Q_NMOS_GSD Q3
+U 1 1 5C36A181
+P 5250 4600
+F 0 "Q3" H 5456 4646 50  0000 L CNN
+F 1 "PMF370XN" H 5456 4555 50  0000 L CNN
+F 2 "" H 5450 4700 50  0001 C CNN
+F 3 "~" H 5250 4600 50  0001 C CNN
+	1    5250 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5C36B30F
+P 6800 4150
+F 0 "D3" V 6838 4033 50  0000 R CNN
+F 1 "LED_ucontrolleur_vert" V 6747 4033 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6800 4150 50  0001 C CNN
+F 3 "~" H 6800 4150 50  0001 C CNN
+	1    6800 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5C36B316
+P 6800 3750
+F 0 "R5" H 6870 3796 50  0000 L CNN
+F 1 "150" H 6870 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6730 3750 50  0001 C CNN
+F 3 "~" H 6800 3750 50  0001 C CNN
+	1    6800 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3600 6800 3500
+Wire Wire Line
+	6500 4600 6400 4600
+Wire Wire Line
+	6800 4800 6800 4900
+Wire Wire Line
+	6800 4400 6800 4300
+Wire Wire Line
+	6800 3900 6800 4000
+$Comp
+L power:GND #PWR?
+U 1 1 5C36B322
+P 6800 4900
+F 0 "#PWR?" H 6800 4650 50  0001 C CNN
+F 1 "GND" H 6805 4727 50  0000 C CNN
+F 2 "" H 6800 4900 50  0001 C CNN
+F 3 "" H 6800 4900 50  0001 C CNN
+	1    6800 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C36B328
+P 6800 3500
+F 0 "#PWR?" H 6800 3350 50  0001 C CNN
+F 1 "+5V" H 6815 3673 50  0000 C CNN
+F 2 "" H 6800 3500 50  0001 C CNN
+F 3 "" H 6800 3500 50  0001 C CNN
+	1    6800 3500
+	1    0    0    -1  
+$EndComp
+Text Notes 6000 4750 0    39   ~ 0
+input : 3.3v ou 5v
+Text Label 6400 4600 1    39   ~ 0
+led_input
+$Comp
+L Device:Q_NMOS_GSD Q4
+U 1 1 5C36B330
+P 6700 4600
+F 0 "Q4" H 6906 4646 50  0000 L CNN
+F 1 "PMF370XN" H 6906 4555 50  0000 L CNN
+F 2 "" H 6900 4700 50  0001 C CNN
+F 3 "~" H 6700 4600 50  0001 C CNN
+	1    6700 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5C36B337
+P 8100 4150
+F 0 "D4" V 8138 4033 50  0000 R CNN
+F 1 "LED_alimentation_rouge" V 8047 4033 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8100 4150 50  0001 C CNN
+F 3 "~" H 8100 4150 50  0001 C CNN
+	1    8100 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5C36B33E
+P 8100 3750
+F 0 "R6" H 8170 3796 50  0000 L CNN
+F 1 "150" H 8170 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8030 3750 50  0001 C CNN
+F 3 "~" H 8100 3750 50  0001 C CNN
+	1    8100 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3600 8100 3500
+Wire Wire Line
+	7800 4600 7700 4600
+Wire Wire Line
+	8100 4800 8100 4900
+Wire Wire Line
+	8100 4400 8100 4300
+Wire Wire Line
+	8100 3900 8100 4000
+$Comp
+L power:GND #PWR?
+U 1 1 5C36B34A
+P 8100 4900
+F 0 "#PWR?" H 8100 4650 50  0001 C CNN
+F 1 "GND" H 8105 4727 50  0000 C CNN
+F 2 "" H 8100 4900 50  0001 C CNN
+F 3 "" H 8100 4900 50  0001 C CNN
+	1    8100 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C36B350
+P 8100 3500
+F 0 "#PWR?" H 8100 3350 50  0001 C CNN
+F 1 "+5V" H 8115 3673 50  0000 C CNN
+F 2 "" H 8100 3500 50  0001 C CNN
+F 3 "" H 8100 3500 50  0001 C CNN
+	1    8100 3500
+	1    0    0    -1  
+$EndComp
+Text Notes 7300 4750 0    39   ~ 0
+input : 3.3v ou 5v
+Text Label 7700 4600 1    39   ~ 0
+led_input
+$Comp
+L Device:Q_NMOS_GSD Q5
+U 1 1 5C36B358
+P 8000 4600
+F 0 "Q5" H 8206 4646 50  0000 L CNN
+F 1 "PMF370XN" H 8206 4555 50  0000 L CNN
+F 2 "" H 8200 4700 50  0001 C CNN
+F 3 "~" H 8000 4600 50  0001 C CNN
+	1    8000 4600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

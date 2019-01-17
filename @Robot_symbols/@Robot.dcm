@@ -1,23 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP alim_logique_5V
-D Alimentation pour le bus logique du robot (5V).
-K connector connecteur alimentation logique 5 5V
-F ~
-$ENDCMP
-#
-$CMP alim_puissance_12V
-D Alimentation pour le bus puissance du robot (12v à 16v)
-K connector connecteur alimentation puissance 12 12V
-F ~
-$ENDCMP
-#
-$CMP connecteur_roue_codeuse
-D Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)
-K connector
-F ~
-$ENDCMP
-#
 $CMP micromatch_4
 D Connecteur micromatch 4 broches
 K micromatch micro match 4 broches pin robot

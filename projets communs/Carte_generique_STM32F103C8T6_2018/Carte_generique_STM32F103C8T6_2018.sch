@@ -522,28 +522,6 @@ F 3 "" H 1050 4900 50  0001 C CNN
 	1    1050 4900
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:+3.3V #PWR03
-U 1 1 5C0A8845
-P 1050 5100
-F 0 "#PWR03" H 1050 4950 50  0001 C CNN
-F 1 "+3.3V" V 1065 5228 50  0000 L CNN
-F 2 "" H 1050 5100 50  0001 C CNN
-F 3 "" H 1050 5100 50  0001 C CNN
-	1    1050 5100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR010
-U 1 1 5C0AB8D9
-P 2350 3400
-F 0 "#PWR010" H 2350 3250 50  0001 C CNN
-F 1 "+3.3V" V 2365 3528 50  0000 L CNN
-F 2 "" H 2350 3400 50  0001 C CNN
-F 3 "" H 2350 3400 50  0001 C CNN
-	1    2350 3400
-	0    1    -1   0   
-$EndComp
 Wire Notes Line
 	2900 2650 2900 5200
 Wire Notes Line
@@ -1031,7 +1009,7 @@ U 1 1 5C44F9E5
 P 8750 1400
 F 0 "U3" H 8719 1035 50  0000 C CNN
 F 1 "servo_connector" H 8719 1126 50  0000 C CNN
-F 2 "" H 8750 1650 50  0001 C CNN
+F 2 "@Robot:ConnectorMicromatch-4" H 8750 1650 50  0001 C CNN
 F 3 "" H 8750 1650 50  0001 C CNN
 	1    8750 1400
 	-1   0    0    1   
@@ -1062,4 +1040,6 @@ Text Notes 9650 6700 0    100  ~ 0
 Année : 
 Text Notes 7350 7500 0    62   ~ 12
 Club Robot’s generic template
+NoConn ~ 1050 5100
+NoConn ~ 2350 3400
 $EndSCHEMATC

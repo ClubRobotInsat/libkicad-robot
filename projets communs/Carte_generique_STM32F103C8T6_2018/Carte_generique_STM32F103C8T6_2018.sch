@@ -20,7 +20,7 @@ U 1 1 5BED9A92
 P 1350 1350
 F 0 "J2" H 1270 1025 50  0000 C CNN
 F 1 "Alim puissance" H 1270 1116 50  0000 C CNN
-F 2 "@Robot:HE14-2_horizontal" H 1350 1350 50  0001 C CNN
+F 2 "@Robot:HE14-2-straight" H 1350 1350 50  0001 C CNN
 F 3 "~" H 1350 1350 50  0001 C CNN
 	1    1350 1350
 	-1   0    0    1   
@@ -1009,7 +1009,7 @@ U 1 1 5C44F9E5
 P 8750 1400
 F 0 "U3" H 8719 1035 50  0000 C CNN
 F 1 "servo_connector" H 8719 1126 50  0000 C CNN
-F 2 "@Robot:ConnectorMicromatch-4" H 8750 1650 50  0001 C CNN
+F 2 "@Robot:HE14-4-straight" H 8750 1650 50  0001 C CNN
 F 3 "" H 8750 1650 50  0001 C CNN
 	1    8750 1400
 	-1   0    0    1   

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Carte_generique_STM32F103C8T6_2018-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -98,7 +99,7 @@ F 3 "~" H 4050 3750 50  0001 C CNN
 	1    4050 3750
 	1    0    0    -1  
 $EndComp
-Text Notes 3450 2950 0    118  ~ 0
+Text Notes 3350 3450 0    118  ~ 0
 Led
 Wire Wire Line
 	4050 3600 4050 3500
@@ -138,48 +139,44 @@ Text Label 3650 4600 1    39   ~ 0
 led_hardfault
 Wire Notes Line
 	3150 5150 3150 3200
-Text Notes 900  3000 0    118  ~ 0
+Text Notes 1000 2900 0    118  ~ 0
 Microcontrolleur
-Wire Notes Line
-	600  2650 2700 2650
 $Comp
 L Connector_Generic:Conn_01x03 J8
 U 1 1 5BEDF7D1
-P 8100 1450
-F 0 "J8" H 8020 1125 50  0000 C CNN
-F 1 "Liaison serie" H 8020 1216 50  0000 C CNN
-F 2 "@Robot:HE14-3-straight" H 8100 1450 50  0001 C CNN
-F 3 "~" H 8100 1450 50  0001 C CNN
-	1    8100 1450
+P 8000 1400
+F 0 "J8" H 7920 1075 50  0000 C CNN
+F 1 "Liaison serie" H 7920 1166 50  0000 C CNN
+F 2 "@Robot:HE14-3-straight" H 8000 1400 50  0001 C CNN
+F 3 "~" H 8000 1400 50  0001 C CNN
+	1    8000 1400
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8300 1550 8400 1550
+	8200 1500 8300 1500
 Wire Wire Line
-	8300 1450 8400 1450
+	8200 1400 8300 1400
 Wire Wire Line
-	8300 1350 8400 1350
+	8200 1300 8300 1300
 $Comp
 L power:GND #PWR035
 U 1 1 5BEE094F
-P 8400 1550
-F 0 "#PWR035" H 8400 1300 50  0001 C CNN
-F 1 "GND" H 8405 1377 50  0000 C CNN
-F 2 "" H 8400 1550 50  0001 C CNN
-F 3 "" H 8400 1550 50  0001 C CNN
-	1    8400 1550
+P 8300 1500
+F 0 "#PWR035" H 8300 1250 50  0001 C CNN
+F 1 "GND" H 8305 1327 50  0000 C CNN
+F 2 "" H 8300 1500 50  0001 C CNN
+F 3 "" H 8300 1500 50  0001 C CNN
+	1    8300 1500
 	1    0    0    -1  
 $EndComp
-Text Label 8400 1450 0    50   ~ 0
+Text Label 8300 1400 0    50   ~ 0
 RX
-Text Label 8400 1350 0    50   ~ 0
+Text Label 8300 1300 0    50   ~ 0
 TX
 Text Notes 6450 1000 0    118  ~ 0
 Connectique
 Wire Notes Line
 	5900 2550 5900 600 
-Text Notes 3300 3150 0    39   ~ 0
-Voir doc pour\nles valeurs des \nresistances
 $Comp
 L @Robot:w5500 U2
 U 1 1 5C086601
@@ -302,8 +299,6 @@ F 3 "" H 3350 1250 50  0001 C CNN
 	1    3350 1250
 	0    1    1    0   
 $EndComp
-Text Notes 2250 950  0    50   ~ 0
-Vout = Vref(1+R2/R1) + Iadj*R2
 $Comp
 L power:+3.3V #PWR029
 U 1 1 5C092FBB
@@ -328,11 +323,7 @@ F 3 "" H 7450 1500 50  0001 C CNN
 $EndComp
 NoConn ~ 7450 1600
 Wire Notes Line
-	5900 2550 8550 2550
-Wire Notes Line
-	5900 600  8550 600 
-Wire Notes Line
-	8550 600  8550 2550
+	9200 600  9200 2550
 $Comp
 L Connector_Generic:Conn_01x03 J5
 U 1 1 5C09726C
@@ -410,7 +401,7 @@ L Device:R R2
 U 1 1 5C0A8909
 P 4200 1550
 F 0 "R2" H 4270 1596 50  0000 L CNN
-F 1 "R" H 4270 1505 50  0000 L CNN
+F 1 "10k" H 4270 1505 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4130 1550 50  0001 C CNN
 F 3 "~" H 4200 1550 50  0001 C CNN
 	1    4200 1550
@@ -421,7 +412,7 @@ L Device:R R3
 U 1 1 5C0A8CC9
 P 5300 1550
 F 0 "R3" H 5370 1596 50  0000 L CNN
-F 1 "R" H 5370 1505 50  0000 L CNN
+F 1 "10k" H 5370 1505 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5230 1550 50  0001 C CNN
 F 3 "~" H 5300 1550 50  0001 C CNN
 	1    5300 1550
@@ -480,8 +471,8 @@ $Comp
 L Connector:Conn_01x20_Female J1
 U 1 1 5C0965A6
 P 1250 4100
-F 0 "J1" H 1277 4076 50  0000 L CNN
-F 1 "Conn_01x20_Female" H 1277 3985 50  0000 L CNN
+F 0 "J1" H 850 5050 50  0000 L CNN
+F 1 "Conn_01x20_Female" H 850 5150 50  0000 L CNN
 F 2 "@Robot:PinSocket_1x20_P2.54mm_Vertical_Long_Pads" H 1250 4100 50  0001 C CNN
 F 3 "~" H 1250 4100 50  0001 C CNN
 	1    1250 4100
@@ -501,24 +492,24 @@ $EndComp
 $Comp
 L power:GND #PWR08
 U 1 1 5C0A3E7B
-P 2200 3200
-F 0 "#PWR08" H 2200 2950 50  0001 C CNN
-F 1 "GND" V 2205 3072 50  0000 R CNN
-F 2 "" H 2200 3200 50  0001 C CNN
-F 3 "" H 2200 3200 50  0001 C CNN
-	1    2200 3200
-	0    1    1    0   
+P 2350 3200
+F 0 "#PWR08" H 2350 2950 50  0001 C CNN
+F 1 "GND" V 2355 3072 50  0000 R CNN
+F 2 "" H 2350 3200 50  0001 C CNN
+F 3 "" H 2350 3200 50  0001 C CNN
+	1    2350 3200
+	0    -1   1    0   
 $EndComp
 $Comp
 L power:GND #PWR09
 U 1 1 5C0A3F9D
-P 2200 3300
-F 0 "#PWR09" H 2200 3050 50  0001 C CNN
-F 1 "GND" V 2205 3172 50  0000 R CNN
-F 2 "" H 2200 3300 50  0001 C CNN
-F 3 "" H 2200 3300 50  0001 C CNN
-	1    2200 3300
-	0    1    1    0   
+P 2350 3300
+F 0 "#PWR09" H 2350 3050 50  0001 C CNN
+F 1 "GND" V 2355 3172 50  0000 R CNN
+F 2 "" H 2350 3300 50  0001 C CNN
+F 3 "" H 2350 3300 50  0001 C CNN
+	1    2350 3300
+	0    -1   1    0   
 $EndComp
 $Comp
 L power:+5V #PWR01
@@ -545,18 +536,16 @@ $EndComp
 $Comp
 L power:+3.3V #PWR010
 U 1 1 5C0AB8D9
-P 2200 3400
-F 0 "#PWR010" H 2200 3250 50  0001 C CNN
-F 1 "+3.3V" V 2215 3528 50  0000 L CNN
-F 2 "" H 2200 3400 50  0001 C CNN
-F 3 "" H 2200 3400 50  0001 C CNN
-	1    2200 3400
-	0    -1   -1   0   
+P 2350 3400
+F 0 "#PWR010" H 2350 3250 50  0001 C CNN
+F 1 "+3.3V" V 2365 3528 50  0000 L CNN
+F 2 "" H 2350 3400 50  0001 C CNN
+F 3 "" H 2350 3400 50  0001 C CNN
+	1    2350 3400
+	0    1    -1   0   
 $EndComp
 Wire Notes Line
-	2700 2650 2700 5200
-Wire Notes Line
-	600  5200 2700 5200
+	2900 2650 2900 5200
 Wire Notes Line
 	600  5200 600  2650
 Wire Wire Line
@@ -606,13 +595,13 @@ Wire Notes Line
 $Comp
 L Connector:Conn_01x20_Female J4
 U 1 1 5C096C54
-P 2400 4100
-F 0 "J4" H 2427 4076 50  0000 L CNN
-F 1 "Conn_01x20_Female" H 2427 3985 50  0000 L CNN
-F 2 "@Robot:PinSocket_1x20_P2.54mm_Vertical_Long_Pads" H 2400 4100 50  0001 C CNN
-F 3 "~" H 2400 4100 50  0001 C CNN
-	1    2400 4100
-	1    0    0    -1  
+P 2150 4100
+F 0 "J4" H 2400 5050 50  0000 L CNN
+F 1 "Conn_01x20_Female" H 1750 5150 50  0000 L CNN
+F 2 "@Robot:PinSocket_1x20_P2.54mm_Vertical_Long_Pads" H 2150 4100 50  0001 C CNN
+F 3 "~" H 2150 4100 50  0001 C CNN
+	1    2150 4100
+	-1   0    0    -1  
 $EndComp
 NoConn ~ 7450 1700
 NoConn ~ 6550 1500
@@ -622,7 +611,7 @@ NoConn ~ 6550 1800
 NoConn ~ 6450 2100
 NoConn ~ 6450 2200
 NoConn ~ 7450 2200
-NoConn ~ 8400 1450
+NoConn ~ 8300 1400
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 5C2388F9
@@ -673,45 +662,45 @@ F 3 "~" H 1700 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 1700 1850
-Text Notes 2450 5100 0    50   ~ 0
+Text Notes 2100 5100 2    50   ~ 0
 VBT
-Text Notes 2450 5000 0    50   ~ 0
+Text Notes 2100 5000 2    50   ~ 0
 C13\n
-Text Notes 2450 4900 0    50   ~ 0
+Text Notes 2100 4900 2    50   ~ 0
 C14
-Text Notes 2450 4800 0    50   ~ 0
+Text Notes 2100 4800 2    50   ~ 0
 C15
-Text Notes 2450 4700 0    50   ~ 0
+Text Notes 2100 4700 2    50   ~ 0
 A0
-Text Notes 2450 4600 0    50   ~ 0
+Text Notes 2100 4600 2    50   ~ 0
 A1
-Text Notes 2450 4500 0    50   ~ 0
+Text Notes 2100 4500 2    50   ~ 0
 A2
-Text Notes 2450 4400 0    50   ~ 0
+Text Notes 2100 4400 2    50   ~ 0
 A3
-Text Notes 2450 4300 0    50   ~ 0
+Text Notes 2100 4300 2    50   ~ 0
 A4
-Text Notes 2450 4200 0    50   ~ 0
+Text Notes 2100 4200 2    50   ~ 0
 A5
-Text Notes 2450 4100 0    50   ~ 0
+Text Notes 2100 4100 2    50   ~ 0
 A6
-Text Notes 2450 4000 0    50   ~ 0
+Text Notes 2100 4000 2    50   ~ 0
 A7
-Text Notes 2450 3900 0    50   ~ 0
+Text Notes 2100 3900 2    50   ~ 0
 B0
-Text Notes 2450 3800 0    50   ~ 0
+Text Notes 2100 3800 2    50   ~ 0
 B1
-Text Notes 2450 3700 0    50   ~ 0
+Text Notes 2100 3700 2    50   ~ 0
 B10
-Text Notes 2450 3600 0    50   ~ 0
+Text Notes 2100 3600 2    50   ~ 0
 B11
-Text Notes 2450 3500 0    50   ~ 0
+Text Notes 2100 3500 2    50   ~ 0
 RST
-Text Notes 2450 3400 0    50   ~ 0
+Text Notes 2100 3400 2    50   ~ 0
 +3.3V
-Text Notes 2450 3300 0    50   ~ 0
+Text Notes 2100 3300 2    50   ~ 0
 GND
-Text Notes 2450 3200 0    50   ~ 0
+Text Notes 2100 3200 2    50   ~ 0
 GND
 Text Notes 1300 5100 0    50   ~ 0
 +3.3V
@@ -753,23 +742,23 @@ Text Notes 1300 3300 0    50   ~ 0
 B13
 Text Notes 1300 3200 0    50   ~ 0
 B12
-NoConn ~ 2200 5100
-NoConn ~ 2200 5000
-NoConn ~ 2200 4900
-NoConn ~ 2200 4800
-NoConn ~ 2200 4700
-NoConn ~ 2200 4600
-NoConn ~ 2200 4500
-NoConn ~ 2200 4400
-NoConn ~ 2200 4300
-NoConn ~ 2200 4200
-NoConn ~ 2200 4100
-NoConn ~ 2200 4000
-NoConn ~ 2200 3900
-NoConn ~ 2200 3800
-NoConn ~ 2200 3700
-NoConn ~ 2200 3600
-NoConn ~ 2200 3500
+NoConn ~ 2350 5100
+NoConn ~ 2350 5000
+NoConn ~ 2350 4900
+NoConn ~ 2350 4800
+NoConn ~ 2350 4700
+NoConn ~ 2350 4600
+NoConn ~ 2350 4500
+NoConn ~ 2350 4400
+NoConn ~ 2350 4300
+NoConn ~ 2350 4200
+NoConn ~ 2350 4100
+NoConn ~ 2350 4000
+NoConn ~ 2350 3900
+NoConn ~ 2350 3800
+NoConn ~ 2350 3700
+NoConn ~ 2350 3600
+NoConn ~ 2350 3500
 NoConn ~ 1050 4800
 NoConn ~ 1050 4700
 NoConn ~ 1050 4600
@@ -1032,4 +1021,45 @@ Wire Wire Line
 	8100 4300 8100 4900
 NoConn ~ 3650 4600
 NoConn ~ 6400 4600
+Wire Notes Line
+	5900 2550 9200 2550
+Wire Notes Line
+	5900 600  9200 600 
+$Comp
+L @Robot:servo_connector U?
+U 1 1 5C44F9E5
+P 8750 1400
+F 0 "U?" H 8719 1035 50  0000 C CNN
+F 1 "servo_connector" H 8719 1126 50  0000 C CNN
+F 2 "" H 8750 1650 50  0001 C CNN
+F 3 "" H 8750 1650 50  0001 C CNN
+	1    8750 1400
+	-1   0    0    1   
+$EndComp
+NoConn ~ 9000 1450
+NoConn ~ 9000 1350
+NoConn ~ 9000 1250
+$Comp
+L power:GND #PWR?
+U 1 1 5C452334
+P 9000 1550
+F 0 "#PWR?" H 9000 1300 50  0001 C CNN
+F 1 "GND" H 9005 1377 50  0000 C CNN
+F 2 "" H 9000 1550 50  0001 C CNN
+F 3 "" H 9000 1550 50  0001 C CNN
+	1    9000 1550
+	1    0    0    -1  
+$EndComp
+Text Notes 9050 1500 0    50   ~ 0
+ne pas conecter\nle vcc
+Wire Notes Line
+	600  2650 2900 2650
+Wire Notes Line
+	600  5200 2900 5200
+Text Notes 7050 7050 0    100  ~ 0
+NOM : \nPrenom : \nClub Robot INSA : 
+Text Notes 9650 6700 0    100  ~ 0
+Année : 
+Text Notes 7350 7500 0    62   ~ 12
+Club Robot’s generic template
 $EndSCHEMATC

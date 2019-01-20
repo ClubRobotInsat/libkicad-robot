@@ -822,7 +822,7 @@ $EndComp
 Text Notes 4550 4750 0    39   ~ 0
 input : 3.3v ou 5v
 Text Label 4950 4600 1    39   ~ 0
-TX
+led_communication
 $Comp
 L Device:Q_NMOS_GSD Q3
 U 1 1 5C36A181
@@ -1042,4 +1042,6 @@ Text Notes 7350 7500 0    62   ~ 12
 Club Robot’s generic template
 NoConn ~ 1050 5100
 NoConn ~ 2350 3400
+NoConn ~ 8300 1300
+NoConn ~ 4950 4600
 $EndSCHEMATC

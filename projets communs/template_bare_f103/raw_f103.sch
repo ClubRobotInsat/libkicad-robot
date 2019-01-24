@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:raw_f103-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L MCU_ST_STM32:STM32F103C6Tx U?
-U 1 1 5BDC73AE
-P 5000 2850
-F 0 "U?" H 5000 4828 50  0000 C CNN
-F 1 "STM32F103C6Tx" H 5000 4737 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 7500 4525 50  0001 R TNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00210843.pdf" H 5000 2850 50  0001 C CNN
-	1    5000 2850
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:Crystal Y1
 U 1 1 5BDC744E
@@ -177,39 +165,6 @@ Wire Wire Line
 	7850 4050 8300 4050
 Wire Wire Line
 	7900 4150 8300 4150
-Wire Wire Line
-	4800 1050 4900 1050
-Wire Wire Line
-	5000 1050 4900 1050
-Connection ~ 4900 1050
-Wire Wire Line
-	5000 1050 5100 1050
-Connection ~ 5000 1050
-Connection ~ 5100 1050
-Wire Wire Line
-	5100 1050 5400 1050
-Wire Wire Line
-	4800 4650 4900 4650
-Wire Wire Line
-	5000 4650 4900 4650
-Connection ~ 4900 4650
-Wire Wire Line
-	5000 4650 5100 4650
-Connection ~ 5000 4650
-$Comp
-L power:GND #PWR?
-U 1 1 5BDCA989
-P 5200 4650
-F 0 "#PWR?" H 5200 4400 50  0001 C CNN
-F 1 "GND" H 5205 4477 50  0000 C CNN
-F 2 "" H 5200 4650 50  0001 C CNN
-F 3 "" H 5200 4650 50  0001 C CNN
-	1    5200 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 4650 5100 4650
-Connection ~ 5100 4650
 $Comp
 L Device:LED D1
 U 1 1 5BDCAEBE
@@ -380,17 +335,6 @@ F 3 "" H 9300 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR?
-U 1 1 5BDF290F
-P 5400 1050
-F 0 "#PWR?" H 5400 900 50  0001 C CNN
-F 1 "+3.3V" V 5415 1178 50  0000 L CNN
-F 2 "" H 5400 1050 50  0001 C CNN
-F 3 "" H 5400 1050 50  0001 C CNN
-	1    5400 1050
-	0    1    1    0   
-$EndComp
-$Comp
 L Regulator_Linear:TLV1117-33 U1
 U 1 1 5BDF2DFA
 P 6900 5200
@@ -480,4 +424,154 @@ Wire Notes Line
 	7550 5750 7550 4900
 Wire Notes Line
 	6300 5750 7550 5750
+$Comp
+L MCU_ST_STM32F1:STM32F103C8Tx U?
+U 1 1 5C499E70
+P 4900 3200
+F 0 "U?" H 4850 1614 50  0000 C CNN
+F 1 "STM32F103C8Tx" H 4850 1523 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4300 1800 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 4900 3200 50  0001 C CNN
+	1    4900 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C49A12B
+P 5100 1700
+F 0 "#PWR?" H 5100 1550 50  0001 C CNN
+F 1 "+3.3V" H 5115 1873 50  0000 C CNN
+F 2 "" H 5100 1700 50  0001 C CNN
+F 3 "" H 5100 1700 50  0001 C CNN
+	1    5100 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1700 4900 1700
+Connection ~ 5100 1700
+Connection ~ 5000 1700
+Wire Wire Line
+	5000 1700 5100 1700
+Wire Wire Line
+	5000 1700 4900 1700
+Connection ~ 4900 1700
+Wire Wire Line
+	4700 4700 4800 4700
+Wire Wire Line
+	4900 4700 4800 4700
+Connection ~ 4800 4700
+Wire Wire Line
+	4900 4700 5000 4700
+Connection ~ 4900 4700
+Wire Wire Line
+	5000 4700 5300 4700
+Wire Wire Line
+	5300 4700 5300 5000
+Connection ~ 5000 4700
+$Comp
+L power:GND #PWR?
+U 1 1 5C49F019
+P 5300 5000
+F 0 "#PWR?" H 5300 4750 50  0001 C CNN
+F 1 "GND" H 5305 4827 50  0000 C CNN
+F 2 "" H 5300 5000 50  0001 C CNN
+F 3 "" H 5300 5000 50  0001 C CNN
+	1    5300 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C49F694
+P 4200 2100
+F 0 "#PWR?" H 4200 1850 50  0001 C CNN
+F 1 "GND" V 4205 1972 50  0000 R CNN
+F 2 "" H 4200 2100 50  0001 C CNN
+F 3 "" H 4200 2100 50  0001 C CNN
+	1    4200 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C49F6F1
+P 4200 3200
+F 0 "#PWR?" H 4200 2950 50  0001 C CNN
+F 1 "GND" V 4205 3072 50  0000 R CNN
+F 2 "" H 4200 3200 50  0001 C CNN
+F 3 "" H 4200 3200 50  0001 C CNN
+	1    4200 3200
+	0    1    1    0   
+$EndComp
+Text Notes 3150 3200 0    50   ~ 0
+PB2 <=> BOOT1\n
+Text GLabel 4200 1900 0    50   Input ~ 0
+RST
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5C4A0813
+P 3350 1050
+F 0 "SW?" H 3350 1335 50  0000 C CNN
+F 1 "SW_Push" H 3350 1244 50  0000 C CNN
+F 2 "" H 3350 1250 50  0001 C CNN
+F 3 "" H 3350 1250 50  0001 C CNN
+	1    3350 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C4A0A1C
+P 3400 1350
+F 0 "C?" V 3150 1350 50  0000 C CNN
+F 1 "C" V 3250 1350 50  0000 C CNN
+F 2 "" H 3438 1200 50  0001 C CNN
+F 3 "~" H 3400 1350 50  0001 C CNN
+	1    3400 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 1050 3550 1350
+Wire Wire Line
+	3250 1350 3150 1350
+Wire Wire Line
+	3150 1350 3150 1050
+$Comp
+L power:GND #PWR?
+U 1 1 5C4A29D0
+P 3150 1350
+F 0 "#PWR?" H 3150 1100 50  0001 C CNN
+F 1 "GND" H 3155 1177 50  0000 C CNN
+F 2 "" H 3150 1350 50  0001 C CNN
+F 3 "" H 3150 1350 50  0001 C CNN
+	1    3150 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 3150 1350
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C4A2F5D
+P 3850 700
+F 0 "#PWR?" H 3850 550 50  0001 C CNN
+F 1 "+3.3V" H 3865 873 50  0000 C CNN
+F 2 "" H 3850 700 50  0001 C CNN
+F 3 "" H 3850 700 50  0001 C CNN
+	1    3850 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C4A2FC1
+P 3850 850
+F 0 "R?" H 3920 896 50  0000 L CNN
+F 1 "10k" H 3920 805 50  0000 L CNN
+F 2 "" V 3780 850 50  0001 C CNN
+F 3 "~" H 3850 850 50  0001 C CNN
+	1    3850 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1000 3850 1050
+Wire Wire Line
+	3850 1050 3550 1050
+Connection ~ 3550 1050
+Text GLabel 3850 1050 2    50   Input ~ 0
+RST
 $EndSCHEMATC

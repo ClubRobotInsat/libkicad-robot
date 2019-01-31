@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:carte_generique_2019_stm32f103-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1028,7 +1029,7 @@ Wire Notes Line
 Wire Notes Line
 	600  5200 2900 5200
 Text Notes 7050 7050 0    100  ~ 0
-NOM : \nPrenom : \nClub Robot INSA : 
+NOM : \nPrenom : \nClub Robot INSA
 Text Notes 9650 6700 0    100  ~ 0
 Année : 
 Text Notes 7350 7500 0    62   ~ 12

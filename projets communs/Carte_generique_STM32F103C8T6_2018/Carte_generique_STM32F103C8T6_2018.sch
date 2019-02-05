@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Carte_generique_STM32F103C8T6_2018-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -581,10 +580,6 @@ F 3 "~" H 2150 4100 50  0001 C CNN
 	1    2150 4100
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 7450 1700
-NoConn ~ 6550 1500
-NoConn ~ 6550 1600
-NoConn ~ 6550 1700
 NoConn ~ 6550 1800
 NoConn ~ 6450 2100
 NoConn ~ 6450 2200
@@ -729,10 +724,6 @@ NoConn ~ 2350 4600
 NoConn ~ 2350 4500
 NoConn ~ 2350 4400
 NoConn ~ 2350 4300
-NoConn ~ 2350 4200
-NoConn ~ 2350 4100
-NoConn ~ 2350 4000
-NoConn ~ 2350 3900
 NoConn ~ 2350 3800
 NoConn ~ 2350 3700
 NoConn ~ 2350 3600
@@ -1044,4 +1035,20 @@ NoConn ~ 1050 5100
 NoConn ~ 2350 3400
 NoConn ~ 8300 1300
 NoConn ~ 4950 4600
+Text Label 6550 1500 2    50   ~ 0
+MOSI
+Text Label 6550 1600 2    50   ~ 0
+SCK
+Text Label 6550 1700 2    50   ~ 0
+CS
+Text Label 7450 1700 0    50   ~ 0
+MISO
+Text Label 2350 4100 0    50   ~ 0
+MISO
+Text Label 2350 4000 0    50   ~ 0
+MOSI
+Text Label 2350 4200 0    50   ~ 0
+SCK
+Text Label 2350 3900 0    50   ~ 0
+CS
 $EndSCHEMATC

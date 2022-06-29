@@ -19,7 +19,7 @@ def get_sha(path):
         library_hash = hashlib.sha256(f.read()).hexdigest()
     return library_hash
 ENV = {
-    "version": "0.5"
+    "version": "0.1"
 }
 
 # Update metadata.json
@@ -59,13 +59,13 @@ shutil.make_archive("resources", "zip", "resources")
 # Update repository.json
 with open("repository.json") as repository_file:
     repository = json.load(repository_file)
-update_time = datetime.datetime.now()
+update_time = datetime.datetime.utcnow()
 repository["packages"]["sha256"] = get_sha("packages.json")
-repository["packages"]["update_time_utc"] = update_time.strftime("%Y-%m-%d %h:%m:%s")
+repository["packages"]["update_time_utc"] = update_time.strftime("%%Y-%m-%d %H:%M:%S")
 repository["packages"]["update_timestamp"] = update_time.timestamp()
 repository["packages"]["url"] = "https://github.com/ClubRobotInsat/libkicad-robot/releases/latest/packages.json"
 repository["resources"]["sha256"] = get_sha("resources.zip")
-repository["resources"]["update_time_utc"] = update_time.strftime("%Y-%m-%d %h:%m:%s")
+repository["resources"]["update_time_utc"] = update_time.strftime("%Y-%m-%d %H:%M:%S")
 repository["resources"]["update_timestamp"] = update_time.timestamp()
 repository["packages"]["url"] = "https://github.com/ClubRobotInsat/libkicad-robot/releases/latest/resources.zip"
 with open("repository.json", "w") as repository_file:

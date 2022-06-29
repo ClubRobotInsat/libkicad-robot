@@ -36,6 +36,11 @@ jobs:
           
     steps:
       - name: Create Release
-        uses: ncipollo/release-action@v1.10.0
+        uses: marvinpinto/action-automatic-releases@latest
         with:
-          artifacts: "librairie.zip,resources.zip,repository.json,packages.json"
+          automatic_release_tag: "latest"
+          prerelease: false
+          title: "Build"
+          files: |
+            *.json
+            *.zip

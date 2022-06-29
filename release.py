@@ -70,3 +70,4 @@ repository["resources"]["update_timestamp"] = int(update_time.timestamp())
 repository["packages"]["url"] = "https://github.com/ClubRobotInsat/libkicad-robot/releases/latest/resources.zip"
 with open("repository.json", "w") as repository_file:
     json.dump(repository, repository_file)
+

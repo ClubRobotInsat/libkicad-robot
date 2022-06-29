@@ -48,7 +48,7 @@ package["packages"][0]["versions"][0] = {
     "kicad_version": "6.0",
     "status": "stable",
     "version": f"{ENV['version']}"
-})
+}
 
 with open("packages.json", 'w') as package_file:
     json.dump(package, package_file)

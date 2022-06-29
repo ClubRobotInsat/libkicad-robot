@@ -61,7 +61,7 @@ with open("repository.json") as repository_file:
     repository = json.load(repository_file)
 update_time = datetime.datetime.utcnow()
 repository["packages"]["sha256"] = get_sha("packages.json")
-repository["packages"]["update_time_utc"] = update_time.strftime("%%Y-%m-%d %H:%M:%S")
+repository["packages"]["update_time_utc"] = update_time.strftime("%Y-%m-%d %H:%M:%S")
 repository["packages"]["update_timestamp"] = update_time.timestamp()
 repository["packages"]["url"] = "https://github.com/ClubRobotInsat/libkicad-robot/releases/latest/packages.json"
 repository["resources"]["sha256"] = get_sha("resources.zip")

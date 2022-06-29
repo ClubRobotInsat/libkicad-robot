@@ -40,7 +40,7 @@ shutil.make_archive("library", "zip", "library")
 with open("packages.json") as package_file:
     package = json.load(package_file)
 
-package["packages"][0]["versions"].append({
+package["packages"][0]["versions"][0] = {
     "download_sha256": get_sha("library.zip"),
     "download_size": os.path.getsize("library.zip"),
     "install_size": get_dir_size("library"),

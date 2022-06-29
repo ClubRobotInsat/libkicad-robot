@@ -5,7 +5,7 @@
       "author": {"contact": {"web": "https://clubrobotinsat.github.io/"}, "name": "Robot club of INSA Toulouse"},
       "description": "All component from Robot club of INSA Toulouse",
       "description_full": "All component from Robot club of INSA Toulouse",
-      "identifier": "com.github.clubrobotinsat.libkicad_robot",
+      "identifier": "com.github.clubrobotinsat.libkicad-robot",
       "license": "GPL-2",
       "maintainer": {"contact": {"web": "https://clubrobotinsat.github.io"}, "name": "Robot club of INSA Toulouse"},
       "name": "Library of Robot club of INSA",

@@ -31,7 +31,7 @@ with open("library/metadata.json", 'w') as metadata_file:
 
 # Create library zip
 os.makedirs("library/resources", exist_ok=True)
-shutil.copy("resources/com.github.clubrobotinsat.libkicad_robot/icon.png", "library/resources/icon.png")
+shutil.copy("resources/com.github.clubrobotinsat.libkicad-robot/icon.png", "library/resources/icon.png")
 shutil.make_archive("library", "zip", "library")
 
 # Python program to find SHA256 hexadecimal hash string of a file

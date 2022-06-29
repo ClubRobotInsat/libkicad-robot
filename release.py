@@ -44,7 +44,7 @@ package["packages"][0]["versions"].append({
     "download_sha256": get_sha("library.zip"),
     "download_size": os.path.getsize("library.zip"),
     "install_size": get_dir_size("library"),
-    "download_url": f"https://github.com/ClubRobotInsat/libkicadrobot/releases/download/latest/library.zip",
+    "download_url": f"https://github.com/ClubRobotInsat/libkicad-robot/releases/download/latest/library.zip",
     "kicad_version": "6.0",
     "status": "stable",
     "version": f"{ENV['version']}"

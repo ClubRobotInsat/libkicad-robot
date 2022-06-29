@@ -15,7 +15,7 @@ def get_dir_size(path):
                 total += get_dir_size(entry.path)
     return total
 def get_sha(path):
-    with open("library.zip", "rb") as f:
+    with open(path, "rb") as f:
         library_hash = hashlib.sha256(f.read()).hexdigest()
     return library_hash
 ENV = {

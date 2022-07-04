@@ -45,7 +45,7 @@
   (pad "4" thru_hole circle (at 3.81 2.54) (size 1.52 1.52) (drill 0.76) (layers *.Cu *.Mask) (tstamp 4da5984b-fdff-4189-83c9-3fdb5c29f601))
   (pad "5" thru_hole circle (at 5.08 0) (size 1.52 1.52) (drill 0.76) (layers *.Cu *.Mask) (tstamp c59b5103-675d-44cb-9128-5f987f8e8841))
   (pad "6" thru_hole circle (at 6.35 2.54) (size 1.52 1.52) (drill 0.76) (layers *.Cu *.Mask) (tstamp 60f6db18-30e9-4101-8493-69a06b5b3fba))
-  (model "../Package3d/test-Body.step"
+  (model "${KICAD6_3RD_PARTY}/3dmodels/com_github_clubrobotinsat_libkicad-robot/Robot.3dshapes/RJ12.step"
     (offset (xyz 9.8 -16.8 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 180))

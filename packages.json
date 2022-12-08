@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "$schema": "https://go.kicad.org/pcm/schemas/v1",
+      "author": {"contact": {"web": "https://clubrobotinsat.github.io/"}, "name": "Robot club of INSA Toulouse"},
+      "description": "All component from Robot club of INSA Toulouse",
+      "description_full": "All component from Robot club of INSA Toulouse",
+      "identifier": "com.github.clubrobotinsat.libkicad-robot",
+      "license": "GPL",
+      "maintainer": {"contact": {"web": "https://clubrobotinsat.github.io"}, "name": "Robot club of INSA Toulouse"},
+      "name": "Library of Robot club of INSA",
+      "resources": {"Github": "https://github.com/ClubRobotInsat/libkicad-robot"},
+      "type": "library",
+      "versions": []}
+  ]
+}

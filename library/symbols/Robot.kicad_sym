@@ -718,7 +718,7 @@
     (property "Value" "L9958" (id 1) (at 3.81 8.89 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "SOIC127P1420X360-21N" (id 2) (at 22.86 19.05 0)
+    (property "Footprint" "Robot:SOIC127P1420X360-21N" (id 2) (at 22.86 19.05 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Datasheet" "" (id 3) (at -33.02 -22.86 0)

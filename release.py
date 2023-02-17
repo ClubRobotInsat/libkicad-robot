@@ -18,11 +18,11 @@ def get_sha(path):
     with open(path, "rb") as f:
         library_hash = hashlib.sha256(f.read()).hexdigest()
     return library_hash
-ENV = {
-    "version": "0.2"
-}
+
 
 # Update metadata.json
+with open("version") as version_file:
+    version = version_file.read_line().strip()
 with open("library/metadata.json") as metadata_file:
     metadata = json.load(metadata_file)
 metadata["versions"][0]["version"] = ENV["version"]
@@ -45,9 +45,9 @@ package["packages"][0]["versions"].append({
     "download_size": os.path.getsize("library.zip"),
     "install_size": get_dir_size("library"),
     "download_url": f"https://github.com/ClubRobotInsat/libkicad-robot/releases/download/latest/library.zip",
-    "kicad_version": "6.0",
+    "kicad_version": "7.0",
     "status": "stable",
-    "version": f"{ENV['version']}"
+    "version": version
 })
 
 with open("packages.json", 'w') as package_file:

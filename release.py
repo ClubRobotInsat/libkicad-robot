@@ -21,7 +21,7 @@ def get_sha(path):
 
 
 # Update metadata.json
-with open("version") as version_file:
+with open("VERSION") as version_file:
     version = version_file.read_line().strip()
 with open("library/metadata.json") as metadata_file:
     metadata = json.load(metadata_file)

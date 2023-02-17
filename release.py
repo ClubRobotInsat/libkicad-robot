@@ -19,7 +19,7 @@ def get_sha(path):
         library_hash = hashlib.sha256(f.read()).hexdigest()
     return library_hash
 ENV = {
-    "version": "0.1"
+    "version": "0.2"
 }
 
 # Update metadata.json

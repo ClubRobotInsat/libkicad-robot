@@ -25,7 +25,7 @@ with open("VERSION") as version_file:
     version = version_file.readline().strip()
 with open("library/metadata.json") as metadata_file:
     metadata = json.load(metadata_file)
-metadata["versions"][0]["version"] = ENV["version"]
+metadata["versions"][0]["version"] = version
 with open("library/metadata.json", 'w') as metadata_file:
     json.dump(metadata, metadata_file)
 

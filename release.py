@@ -22,7 +22,7 @@ def get_sha(path):
 
 # Update metadata.json
 with open("VERSION") as version_file:
-    version = version_file.read_line().strip()
+    version = version_file.readline().strip()
 with open("library/metadata.json") as metadata_file:
     metadata = json.load(metadata_file)
 metadata["versions"][0]["version"] = ENV["version"]
